@@ -1,5 +1,6 @@
 package pp_fp06.PizzaRestaurant;
 
+import java.util.Arrays;
 import pp_fp06.PizzaRestaurant.enums.PizzaSize;
 import pp_fp06.PizzaRestaurant.enums.Ingredient;
 
@@ -23,6 +24,7 @@ public class Pizza {
     private String description;
     private Ingredient[] ingredients;
     private int numberOfIngredients;
+    private PizzaSize size;
 
     /**
      * Método construtor para a criação de uma instância de {@link Pizza pizza}.
@@ -53,6 +55,38 @@ public class Pizza {
             System.out.println("Erro nos Ingredientes");
         }
 
+    }
+
+    public Pizza(int id, String name, String description, Ingredient[] array, int numberOfIngredients, PizzaSize size) {
+        if (numberOfIngredients != 0 && numberOfIngredients <= 5) {
+            this.size = size;
+            this.ingredients = array;
+            this.id = id;
+            this.name = name;
+            this.description = description;
+            this.numberOfIngredients = numberOfIngredients;
+        } else {
+            System.out.println("Erro nos Ingredientes");
+        }
+    }
+    
+    /*
+    Printar Pizzas
+    */
+    public void PrintPizza() {
+        
+        System.out.println("");
+        System.out.println(this.name);
+        System.out.println(this.size);
+        System.out.println(this.id);
+        System.out.println(this.description);
+        System.out.println(this.numberOfIngredients);
+        
+        for (Ingredient ingredient : this.ingredients) {
+            //System.out.println(ingredient);
+            ingredient.print();
+        }
+        
     }
 
 }

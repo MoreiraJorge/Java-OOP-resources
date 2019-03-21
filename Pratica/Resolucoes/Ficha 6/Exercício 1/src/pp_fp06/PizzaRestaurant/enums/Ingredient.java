@@ -24,7 +24,11 @@ public class Ingredient {
         this.origem = origem;
     }
     
-    
+    public void print(){
+        System.out.print(this.name);
+        System.out.print(this.codigo);
+        System.out.println(this.origem);
+    }
     
     
     

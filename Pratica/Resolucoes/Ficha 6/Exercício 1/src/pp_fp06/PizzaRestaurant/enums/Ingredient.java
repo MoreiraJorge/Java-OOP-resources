@@ -11,4 +11,21 @@ package pp_fp06.PizzaRestaurant.enums;
  */
 public class Ingredient {
     
+    private String name;
+    private int codigo;
+    private TipoIngredient origem;
+    
+    Ingredient(){
+    }
+
+    public Ingredient(String name, int codigo, TipoIngredient origem) {
+        this.name = name;
+        this.codigo = codigo;
+        this.origem = origem;
+    }
+    
+    
+    
+    
+    
 }

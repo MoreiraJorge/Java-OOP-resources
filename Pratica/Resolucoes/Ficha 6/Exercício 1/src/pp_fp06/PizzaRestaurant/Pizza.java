@@ -31,11 +31,28 @@ public class Pizza {
      * @param name Nome da <b>Pizza</b>
      * @param description Descrição resumida da <b>Pizza</b>
      */
+    Pizza() {
+    }
+
     public Pizza(int id, String name, String description) {
         numberOfIngredients = 0;
         this.id = id;
         this.name = name;
         this.description = description;
     }
-    
+
+    public Pizza(int id, String name, int numberOfIngredients, String description, Ingredient[] array) {
+
+        if (numberOfIngredients != 0 && numberOfIngredients <= 5) {
+            this.ingredients = array;
+            this.id = id;
+            this.name = name;
+            this.description = description;
+            this.numberOfIngredients = numberOfIngredients;
+        } else {
+            System.out.println("Erro nos Ingredientes");
+        }
+
+    }
+
 }

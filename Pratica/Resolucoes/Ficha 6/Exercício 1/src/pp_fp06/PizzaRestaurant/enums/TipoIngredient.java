@@ -10,8 +10,27 @@ package pp_fp06.PizzaRestaurant.enums;
  * @author Jorge Moreira
  */
 public enum TipoIngredient {
-    ANIMAL,VEGETAL,MINERAL;
+
+    /**
+     *
+     */
+    ANIMAL,
+
+    /**
+     *
+     */
+    VEGETAL,
+
+    /**
+     *
+     */
+    MINERAL;
     
+    /**
+     *
+     * @param tipo
+     * @return
+     */
     public static String IngredientTypeToString(TipoIngredient tipo){
         switch(tipo){
             case ANIMAL:

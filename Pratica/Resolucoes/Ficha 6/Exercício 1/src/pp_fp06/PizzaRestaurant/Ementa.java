@@ -18,12 +18,12 @@ public class Ementa {
     private final int MAX_PIZZAS = 10;
     private static final int MAX_MENUS = 1;
     private Pizza[] pizzalist;
-    private int counter = 0;
+    private static int counter = 0;
 
     Ementa() {
     }
 
-    public Ementa(Pizza[] pizzalist) {
+    private Ementa(Pizza[] pizzalist) {
         if (pizzalist.length > MAX_PIZZAS) {
             System.out.println("Maximo de Pizzas ultrapassado!!!");
         } else {
@@ -32,12 +32,23 @@ public class Ementa {
                     if (pizzalist[i].getIngredientsPos(i).getOrigem() == VEGETAL) {
                         this.pizzalist = pizzalist;
                         this.date = LocalDateTime.now();
-                        counter++;
+                        counter +=1;
                     }
                 }
             }
         }
     }
+    
+    public static Ementa returnInstance(Pizza[] pizzalist) {
+        if (Ementa.counter < MAX_MENUS) {
+            return (new Ementa(pizzalist));
+        } else {
+            System.out.println("Já existe uma ementa.");
+            return null;
+        }
+}
+    
+    
 
     public void printEmenta() {
         if (counter > 1) {

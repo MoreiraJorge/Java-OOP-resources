@@ -37,7 +37,7 @@ public class PizzaDemo {
         Pizza[] Pizzalist1 = {new Pizza(1, "Pizza Miguel", "O MiGUEL fez a Pizza", Inglist1, 4, PizzaSize.BIG),
                               new Pizza(2, "Pizza Jorge", "O Jorge fez a Pizza", Inglist2, 2, PizzaSize.MEDIUM)};
         
-        Ementa ementa1 = new Ementa(Pizzalist1);
+        Ementa ementa1 = Ementa.returnInstance(Pizzalist1);
 //        
 //        p2.PrintPizza();
 //        p1.PrintPizza();

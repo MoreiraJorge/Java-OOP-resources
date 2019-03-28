@@ -12,17 +12,16 @@ package pp_fp07.enums;
 public enum MountainBikeSuspension {
     SIMPLES, DUPLA, SEM;
 
-    public static String MountainBikeSuspension(MountainBikeSuspension tipo) {
+    public static String MountainBikeSuspensionToString(MountainBikeSuspension tipo) {
 
         switch (tipo) {
             case SIMPLES:
                 return "Suspensao simples";
             case DUPLA:
                 return "suspensao dupla";
-            case SEM:
-                return "sem suspensão";
+            //case SEM:
             default:
-                return "suspensão invalida";
+               return "sem suspensão"; 
         }
     }
 

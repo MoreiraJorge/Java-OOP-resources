@@ -3,18 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pp_fp07.bikestore;
+package pp_fp07.enums;
 
 /**
  *
  * @author Jorge Moreira
  */
-public class BikeTools {
-
-    private String name;
-
-    public BikeTools(String name) {
-        this.name = name;
-    }
-
+public enum BikeTools {
+    
+    GARRAFA_AGUA, KIT_PNEU, KIT_VOLANTE, LUZ_TRASEIRA, LUZ_FRONTAL,
+    CESTA, CONTA_KIL, LUBRIFICADOR_CORRENTE, GPS, BOMBA_PRESSAO,
+    KIT_PEDAIS, BOLSA_SELIM;
+    
 }

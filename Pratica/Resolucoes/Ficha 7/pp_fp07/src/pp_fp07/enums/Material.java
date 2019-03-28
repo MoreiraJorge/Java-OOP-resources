@@ -14,7 +14,7 @@ public enum Material {
     CARBONO, ALUMINIO, SEM;
     
     
-    public static String Material(Material tipo){
+    public static String MaterialToString(Material tipo){
        
         switch(tipo){
             case CARBONO:

@@ -1,5 +1,6 @@
 package pp_fp07.bikestore;
 
+import pp_fp07.enums.BikeTools;
 import pp_fp07.enums.BrakeType;
 import pp_fp07.enums.Material;
 import pp_fp07.enums.MountainBikeSuspension;
@@ -17,6 +18,8 @@ import pp_fp07.enums.MountainBikeSuspension;
  * </p>
  */
 public class MountainBike extends Bicycle {
+
+    private final int MAXTOOLS = 10;
 
     /**
      * Número de luzes
@@ -55,5 +58,53 @@ public class MountainBike extends Bicycle {
 
         this.numberOfLights = numberOfLights;
         this.suspension = suspension;
+        bikeTools = new BikeTools[MAXTOOLS];
+    }
+
+    public void addtool(BikeTools tool) {
+        int i = 0;
+/// counter 
+// biketools[counter]
+// counter++
+        for (; i < MAXTOOLS; i++) {
+            if (this.bikeTools[i] == null) {
+                this.bikeTools[i] = tool;
+                break;
+            }
+        }
+    }
+
+    public void edittool(BikeTools tool, BikeTools newtool) {
+        int i = 0;
+
+        for (; i < MAXTOOLS; i++) {
+            if (this.bikeTools[i] == tool) {
+                this.bikeTools[i] = newtool;
+                break;
+            }
+        }
+
+    }
+
+    public void removetool(BikeTools tool) {
+// 4-3 counter --
+        int i = 0;
+        BikeTools[] newtools = new BikeTools[this.bikeTools.length];
+
+        for (int k = 0; i < MAXTOOLS; i++) {
+
+            if (this.bikeTools[i] == tool) {
+                continue;
+            }
+
+            newtools[k++] = this.bikeTools[i];
+        }
+        this.bikeTools = newtools;
+    }
+
+    public void printtools() {
+        for (int i = 0; i < this.bikeTools.length; i++) {
+            System.out.println(this.bikeTools[i]);
+        }
     }
 }

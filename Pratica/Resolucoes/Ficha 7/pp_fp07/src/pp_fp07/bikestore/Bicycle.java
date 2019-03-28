@@ -55,8 +55,8 @@ public class Bicycle {
     private int guaranteeYears;
 
     /**
-     * Método construtor para a criação de uma instância de
-     * {@link Biclycle bicicleta}.
+     * Método construtor para a criação de uma instância de Bycicle
+     *
      *
      * @param id Identificador da bicicleta
      * @param numberOfGears Número de velocidades
@@ -96,56 +96,56 @@ public class Bicycle {
     }
 
     /**
-     *
-     * @return
+     * getNumberOfGears
+     * @return gears
      */
     public int getNumberOfGears() {
         return numberOfGears;
     }
 
     /**
-     *
-     * @return
+     * getMainColor
+     * @return color
      */
     public String getMainColor() {
         return mainColor;
     }
 
     /**
-     *
-     * @return
+     * getWeelSize
+     * @return size
      */
     public float getWeelSize() {
         return weelSize;
     }
 
     /**
-     *
-     * @return
+     * getBrakes
+     * @return brake
      */
     public BrakeType getBrakes() {
         return brakes;
     }
 
     /**
-     *
-     * @return
+     * getMaterial
+     * @return material
      */
     public Material getMaterial() {
         return material;
     }
 
     /**
-     *
-     * @return
+     * getPrice
+     * @return price
      */
     public float getPrice() {
         return price;
     }
 
     /**
-     *
-     * @return
+     * getGuaranteeYears
+     * @return guarantee
      */
     public int getGuaranteeYears() {
         return guaranteeYears;
@@ -154,8 +154,8 @@ public class Bicycle {
     /**
      * Metodo para modificar um material colocando um novo e substituir o antigo
      *
-     * @param material
-     * @param newmaterial
+     * @param material old type
+     * @param newmaterial new type
      */
     public void editmaterial(Material material, Material newmaterial) {
 
@@ -173,6 +173,7 @@ public class Bicycle {
     
     /**
      * Printar all Bikes
+     * @return Bikes
      */
     @Override
     public String toString() {

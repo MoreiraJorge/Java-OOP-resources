@@ -12,24 +12,24 @@ package pp_fp07.enums;
 public enum MountainBikeSuspension {
 
     /**
-     *
+     * suspension type
      */
     SIMPLES,
 
     /**
-     *
+     * suspension type
      */
     DUPLA,
 
     /**
-     *
+     *  no suspension type
      */
     SEM;
 
     /**
      * Enumeração para escolher suspension de MountainBike
-     * @param tipo
-     * @return
+     * @param tipo de suspension
+     * @return tipo de suspension
      */
     public static String MountainBikeSuspensionToString(MountainBikeSuspension tipo) {
 

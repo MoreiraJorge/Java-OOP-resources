@@ -12,19 +12,19 @@ package pp_fp07.enums;
 public enum BrakeType {
     
     /**
-     *
+     * pinsças
      */
     P,
 
     /**
-     *
+     * Hidraulicas
      */
     H;
     
     /**
      * Enum para tipo de Travoes
-     * @param tipo
-     * @return
+     * @param tipo de break
+     * @return break
      */
     public static String BrakeType(BrakeType tipo){
        

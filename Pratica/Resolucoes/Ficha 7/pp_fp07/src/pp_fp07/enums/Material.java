@@ -12,24 +12,24 @@ package pp_fp07.enums;
 public enum Material {
     
     /**
-     *
+     *tipo de material
      */
     CARBONO,
 
     /**
-     *
+     *tipo de material
      */
     ALUMINIO,
 
     /**
-     *
+     * sem tipo de material
      */
     SEM;
     
     /**
      * enum para tipo de material
-     * @param tipo
-     * @return
+     * @param tipo material
+     * @return material
      */
     public static String MaterialToString(Material tipo){
        

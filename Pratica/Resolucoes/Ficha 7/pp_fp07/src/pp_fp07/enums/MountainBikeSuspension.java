@@ -19,7 +19,6 @@ public enum MountainBikeSuspension {
                 return "Suspensao simples";
             case DUPLA:
                 return "suspensao dupla";
-            //case SEM:
             default:
                return "sem suspensão"; 
         }

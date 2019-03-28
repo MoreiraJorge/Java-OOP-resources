@@ -44,7 +44,7 @@ public class Bicycle {
      * Tipo de material
      * TODO: Material
      */
-    private Material material;
+    Material material;
     
     /**
      * Preço da bicicleta
@@ -95,6 +95,16 @@ public class Bicycle {
      */
     public final void setId(int id) {
         this.id = id;
+    }
+    
+    public void editmaterial(Material material, Material newmaterial){
+    
+    this.material = newmaterial;
+     
+    }
+    
+    public void printmat(){
+        System.out.println(this.material);
     }
     
 }

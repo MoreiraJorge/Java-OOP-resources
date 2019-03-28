@@ -2,6 +2,7 @@ package pp_fp07;
 
 
 import pp_fp07.bikestore.MountainBike;
+import pp_fp07.bikestore.RoadBike;
 import pp_fp07.enums.BikeTools;
 import pp_fp07.enums.BrakeType;
 import pp_fp07.enums.Material;
@@ -27,12 +28,26 @@ public class BikeDemo {
         b.addtool(BikeTools.BOMBA_PRESSAO);
         b.addtool(BikeTools.CONTA_KIL);
         
-        b.printtools();
+        System.out.println(b.printtools());
         
         b.removetool(BikeTools.GPS);
         
         System.out.println(" ");
-        b.printtools();
+        System.out.println(b.printtools());
+        
+        System.out.println(" ");
+        
+        
+        
+        RoadBike b2 = new RoadBike(2, 0, "Blue", 0, BrakeType.P, Material.CARBONO, 0, 0, "Fitacola", 0);
+        b2.addobs("Bicicleta tem de ter rodas");
+        b2.addobs("Bicicleta tem de andar");
+        System.out.println(b2.printobs());
+        
+        //b2.editmaterial(Material.CARBONO, Material.ALUMINIO);
+        //b2.printmat();
+        
+        
         
     }
     

@@ -63,7 +63,8 @@ public class MountainBike extends Bicycle {
     }
 
     /**
-     *
+     * Metodo de adicionar ferramentas ao array de bikeTools
+     * conta tambem a posição que foi guardada com um counter
      * @param tool
      */
     public void addtool(BikeTools tool) {
@@ -81,7 +82,8 @@ public class MountainBike extends Bicycle {
     }
 
     /**
-     *
+     * metodo de editar tools, vaia aposiçao da tool antiga e da replace por uma
+     * nova a escolha
      * @param tool
      * @param newtool
      */
@@ -98,7 +100,9 @@ public class MountainBike extends Bicycle {
     }
 
     /**
-     *
+     * Metodo de remover tools
+     * verifica se ha tools iguais a inserida no metodo, se houver ignora, se nao
+     * houver, guarda pro array novo as diferentes
      * @param tool
      */
     public void removetool(BikeTools tool) {
@@ -119,7 +123,7 @@ public class MountainBike extends Bicycle {
     }
 
     /**
-     *
+     * printar tools
      * @return
      */
     public String printtools() {
@@ -133,7 +137,7 @@ public class MountainBike extends Bicycle {
     }
     
     /**
-     *
+     * printar bike
      */
     public void printBike(){
         System.out.println("-----------------//////---------");
@@ -159,7 +163,6 @@ public class MountainBike extends Bicycle {
         System.out.println(suspension);
         System.out.println("-------------Tools : ");
         System.out.println(printtools());
-        
         
     }
 

@@ -152,6 +152,7 @@ public class Bicycle {
     }
 
     /**
+     * Metodo para modificar um material colocando um novo e substituir o antigo
      *
      * @param material
      * @param newmaterial
@@ -163,10 +164,23 @@ public class Bicycle {
     }
 
     /**
-     *
+     * Printar materiais
      */
     public void printmat() {
         System.out.println(this.material);
     }
+    
+    
+    /**
+     * Printar all Bikes
+     */
+    @Override
+    public String toString() {
+        String text = "ID : " + id + "\n"
+                + "Number of gears : " + numberOfGears + "\n"
+                + "Cor : " + mainColor + "\n"
+                + "Garantia : " + guaranteeYears + "\n";
+        return text;
+}
 
 }

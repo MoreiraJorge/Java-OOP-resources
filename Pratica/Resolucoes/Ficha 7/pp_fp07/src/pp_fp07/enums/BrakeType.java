@@ -22,7 +22,7 @@ public enum BrakeType {
     H;
     
     /**
-     *
+     * Enum para tipo de Travoes
      * @param tipo
      * @return
      */

@@ -27,7 +27,7 @@ public enum Material {
     SEM;
     
     /**
-     *
+     * enum para tipo de material
      * @param tipo
      * @return
      */

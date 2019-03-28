@@ -1,6 +1,7 @@
 package pp_fp07;
 
 
+import pp_fp07.bikestore.BikeManagement;
 import pp_fp07.bikestore.MountainBike;
 import pp_fp07.bikestore.RoadBike;
 import pp_fp07.enums.BikeTools;
@@ -46,9 +47,14 @@ public class BikeDemo {
         
         //b2.editmaterial(Material.CARBONO, Material.ALUMINIO);
         //b2.printmat();
+        BikeManagement list = new BikeManagement();
+        list.addbike(b);
+        list.addbike(b2);
         
-        b.printBike();
-        b2.printBike();
+        System.out.println(list.toString());
+        //System.out.println(b.printBike());
+        
+        //list.printbikelist();
         
     }
     

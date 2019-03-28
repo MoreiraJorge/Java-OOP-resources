@@ -24,7 +24,7 @@ public class RoadBike extends Bicycle {
     private int countobs = 0;
 
     /**
-     *
+     * Metodo construtor de Roadbike
      * @param id
      * @param numberOfGears
      * @param mainColor
@@ -49,7 +49,7 @@ public class RoadBike extends Bicycle {
     }
 
     /**
-     *
+     * Adicionar observaçoes ao array
      * @param obs
      */
     public void addobs(String obs) {
@@ -63,7 +63,7 @@ public class RoadBike extends Bicycle {
     }
 
     /**
-     *
+     * remover observaçoes
      * @param pos
      */
     public void removeobs(int pos) {
@@ -87,7 +87,7 @@ public class RoadBike extends Bicycle {
     }
 
     /**
-     *
+     * editar observaçoes
      * @param position
      * @param obs
      */
@@ -110,7 +110,7 @@ public class RoadBike extends Bicycle {
     }
 
     /**
-     *
+     * printar ibservaçoes
      * @return
      */
     public String printobs() {
@@ -122,7 +122,7 @@ public class RoadBike extends Bicycle {
     }
     
     /**
-     *
+     * Printar Bike
      */
     public void printBike(){
         System.out.println("-----------------////----------");

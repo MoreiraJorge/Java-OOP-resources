@@ -23,11 +23,28 @@ public class BikeManagement {
         }
     } //ou pode percorrer o array e adicionar pra la
     
-    /**
-     *
-     */
-    public void printlist(){
-        
+    
+    
+    
+//    public void printbikelist(){
+//        
+//        
+//        for (int i = 0; i < count; i++){
+//            System.out.println("Bicicleta" + (i + 1) + "\n");
+//            System.out.println();
+//            
+//        }
+//        
+//  
+//    }
+    
+    @Override
+    public String toString() {
+        String text = "";
+        for (int i = 0; i < count; i++) {
+            text += "Bike " + (i + 1) + " : " + "\n" + bikelist[i].toString() + "\n";
+        }
+        return text;
     }
 
 }

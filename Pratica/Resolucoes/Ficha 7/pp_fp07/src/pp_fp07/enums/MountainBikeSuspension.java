@@ -27,7 +27,7 @@ public enum MountainBikeSuspension {
     SEM;
 
     /**
-     *
+     * Enumeração para escolher suspension de MountainBike
      * @param tipo
      * @return
      */

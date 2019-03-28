@@ -11,8 +11,21 @@ package pp_fp07.enums;
  */
 public enum BrakeType {
     
-    P, H;
+    /**
+     *
+     */
+    P,
+
+    /**
+     *
+     */
+    H;
     
+    /**
+     *
+     * @param tipo
+     * @return
+     */
     public static String BrakeType(BrakeType tipo){
        
         switch(tipo){

@@ -15,8 +15,8 @@ import pp_fp07.enums.Material;
  * Classe que representa a estrutura de uma Bicicleta
  * </p>
  */
-
 public class Bicycle {
+
     /**
      * Identificador numérico da bicicleta
      */
@@ -33,24 +33,22 @@ public class Bicycle {
      * Diâmetro das rodas
      */
     private float weelSize;
-   
+
     /**
-     * Tipo de travões
-     * TODO: BrakeType
+     * Tipo de travões TODO: BrakeType
      */
     private BrakeType brakes;
-   
+
     /**
-     * Tipo de material
-     * TODO: Material
+     * Tipo de material TODO: Material
      */
     Material material;
-    
+
     /**
      * Preço da bicicleta
      */
     private float price;
-    
+
     /**
      * Número de anos de garantia
      */
@@ -59,7 +57,7 @@ public class Bicycle {
     /**
      * Método construtor para a criação de uma instância de
      * {@link Biclycle bicicleta}.
-     * 
+     *
      * @param id Identificador da bicicleta
      * @param numberOfGears Número de velocidades
      * @param mainColor Cor da bicicleta
@@ -69,7 +67,7 @@ public class Bicycle {
      * @param price Preço da bicicleta
      * @param guaranteeYears Anos de garantia da bicicleta
      */
-    public Bicycle(int id, int numberOfGears, String mainColor, float weelSize, 
+    public Bicycle(int id, int numberOfGears, String mainColor, float weelSize,
             BrakeType brakes, Material material, float price, int guaranteeYears) {
         this.setId(id);
         this.numberOfGears = numberOfGears;
@@ -78,33 +76,97 @@ public class Bicycle {
         this.brakes = brakes;
         this.material = material;
         this.price = price;
-        this.guaranteeYears=guaranteeYears;
+        this.guaranteeYears = guaranteeYears;
     }
 
     /**
-     *  
-     * @return o {@link Bicycle#id id} de uma bicicleta 
+     *
+     * @return o {@link Bicycle#id id} de uma bicicleta
      */
     public int getId() {
         return id;
     }
-    
+
     /**
-     * 
-     * @param id {@link Bicycle#id id} de uma bicicleta 
+     *
+     * @param id {@link Bicycle#id id} de uma bicicleta
      */
     public final void setId(int id) {
         this.id = id;
     }
-    
-    public void editmaterial(Material material, Material newmaterial){
-    
-    this.material = newmaterial;
-     
+
+    /**
+     *
+     * @return
+     */
+    public int getNumberOfGears() {
+        return numberOfGears;
     }
-    
-    public void printmat(){
+
+    /**
+     *
+     * @return
+     */
+    public String getMainColor() {
+        return mainColor;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public float getWeelSize() {
+        return weelSize;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public BrakeType getBrakes() {
+        return brakes;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public Material getMaterial() {
+        return material;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public float getPrice() {
+        return price;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public int getGuaranteeYears() {
+        return guaranteeYears;
+    }
+
+    /**
+     *
+     * @param material
+     * @param newmaterial
+     */
+    public void editmaterial(Material material, Material newmaterial) {
+
+        this.material = newmaterial;
+
+    }
+
+    /**
+     *
+     */
+    public void printmat() {
         System.out.println(this.material);
     }
-    
+
 }

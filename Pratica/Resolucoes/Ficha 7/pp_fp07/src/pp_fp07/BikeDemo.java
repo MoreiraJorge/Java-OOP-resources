@@ -47,7 +47,8 @@ public class BikeDemo {
         //b2.editmaterial(Material.CARBONO, Material.ALUMINIO);
         //b2.printmat();
         
-        
+        b.printBike();
+        b2.printBike();
         
     }
     

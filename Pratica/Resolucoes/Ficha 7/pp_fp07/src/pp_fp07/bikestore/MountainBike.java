@@ -62,11 +62,15 @@ public class MountainBike extends Bicycle {
         bikeTools = new BikeTools[MAXTOOLS];
     }
 
+    /**
+     *
+     * @param tool
+     */
     public void addtool(BikeTools tool) {
         int i = 0;
-/// counter 
-// biketools[counter]
-// counter++
+        /// counter 
+        // biketools[counter]
+        // counter++
         for (; i < MAXTOOLS; i++) {
             if (bikeTools[i] == null) {
                 bikeTools[i] = tool;
@@ -76,6 +80,11 @@ public class MountainBike extends Bicycle {
         }
     }
 
+    /**
+     *
+     * @param tool
+     * @param newtool
+     */
     public void edittool(BikeTools tool, BikeTools newtool) {
         int i = 0;
 
@@ -88,14 +97,19 @@ public class MountainBike extends Bicycle {
 
     }
 
+    /**
+     *
+     * @param tool
+     */
     public void removetool(BikeTools tool) {
-// 4-3 counter --
+        // 4-3 counter --
         int i = 0;
         BikeTools[] newtools = new BikeTools[bikeTools.length];
 
         for (int k = 0; i < MAXTOOLS; i++) {
 
             if (bikeTools[i] == tool) {
+                counttools--;
                 continue;
             }
 
@@ -104,6 +118,10 @@ public class MountainBike extends Bicycle {
         bikeTools = newtools;
     }
 
+    /**
+     *
+     * @return
+     */
     public String printtools() {
 
         String tools = "";
@@ -112,6 +130,37 @@ public class MountainBike extends Bicycle {
         }
 
         return tools;
+    }
+    
+    /**
+     *
+     */
+    public void printBike(){
+        System.out.println("-----------------//////---------");
+        System.out.print("ID : ");
+        System.out.println(super.getId());
+        System.out.print("Number of Gears: ");
+        System.out.println(super.getNumberOfGears());
+        System.out.print("Cor : ");
+        System.out.println(super.getMainColor());
+        System.out.print("Weel Size : ");
+        System.out.println(super.getWeelSize());
+        System.out.print("Brakes : ");
+        System.out.println(super.getBrakes());
+        System.out.print("Material : ");
+        System.out.println(super.getMaterial());
+        System.out.print("Price : ");
+        System.out.println(super.getPrice());
+        System.out.print("Guarantee : ");
+        System.out.println(super.getGuaranteeYears());
+        System.out.print("Number of lights : ");
+        System.out.println(numberOfLights);
+        System.out.print("Suspension : ");
+        System.out.println(suspension);
+        System.out.println("-------------Tools : ");
+        System.out.println(printtools());
+        
+        
     }
 
 }

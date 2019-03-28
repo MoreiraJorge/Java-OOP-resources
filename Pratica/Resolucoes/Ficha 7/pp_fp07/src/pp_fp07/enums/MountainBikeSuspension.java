@@ -10,8 +10,27 @@ package pp_fp07.enums;
  * @author Jorge Moreira
  */
 public enum MountainBikeSuspension {
-    SIMPLES, DUPLA, SEM;
 
+    /**
+     *
+     */
+    SIMPLES,
+
+    /**
+     *
+     */
+    DUPLA,
+
+    /**
+     *
+     */
+    SEM;
+
+    /**
+     *
+     * @param tipo
+     * @return
+     */
     public static String MountainBikeSuspensionToString(MountainBikeSuspension tipo) {
 
         switch (tipo) {

@@ -11,9 +11,26 @@ package pp_fp07.enums;
  */
 public enum Material {
     
-    CARBONO, ALUMINIO, SEM;
+    /**
+     *
+     */
+    CARBONO,
+
+    /**
+     *
+     */
+    ALUMINIO,
+
+    /**
+     *
+     */
+    SEM;
     
-    
+    /**
+     *
+     * @param tipo
+     * @return
+     */
     public static String MaterialToString(Material tipo){
        
         switch(tipo){

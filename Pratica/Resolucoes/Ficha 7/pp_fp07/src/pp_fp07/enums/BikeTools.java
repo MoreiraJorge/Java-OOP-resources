@@ -11,8 +11,64 @@ package pp_fp07.enums;
  */
 public enum BikeTools {
     
-    GARRAFA_AGUA, KIT_PNEU, KIT_VOLANTE, LUZ_TRASEIRA, LUZ_FRONTAL,
-    CESTA, CONTA_KIL, LUBRIFICADOR_CORRENTE, GPS, BOMBA_PRESSAO,
-    KIT_PEDAIS, BOLSA_SELIM;
+    /**
+     *
+     */
+    GARRAFA_AGUA,
+
+    /**
+     *
+     */
+    KIT_PNEU,
+
+    /**
+     *
+     */
+    KIT_VOLANTE,
+
+    /**
+     *
+     */
+    LUZ_TRASEIRA,
+
+    /**
+     *
+     */
+    LUZ_FRONTAL,
+
+    /**
+     *
+     */
+    CESTA,
+
+    /**
+     *
+     */
+    CONTA_KIL,
+
+    /**
+     *
+     */
+    LUBRIFICADOR_CORRENTE,
+
+    /**
+     *
+     */
+    GPS,
+
+    /**
+     *
+     */
+    BOMBA_PRESSAO,
+
+    /**
+     *
+     */
+    KIT_PEDAIS,
+
+    /**
+     *
+     */
+    BOLSA_SELIM;
     
 }

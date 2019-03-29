@@ -3,19 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package parte.pkg2;
+package pp_fp06.PizzaRestaurant;
 
 /**
  *
  * @author Jorge Moreira
  */
-public class Parte2 {
+public class PizzaDemo {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        
+        
     }
+   
+    
     
 }

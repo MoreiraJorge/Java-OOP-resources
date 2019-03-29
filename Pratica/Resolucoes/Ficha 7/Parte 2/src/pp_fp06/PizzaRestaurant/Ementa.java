@@ -5,8 +5,8 @@
  */
 package pp_fp06.PizzaRestaurant;
 
-import java.time.LocalDateTime;
-import static pp_fp06.PizzaRestaurant.enums.PizzaType.VEGETABLE;
+//import java.time.LocalDateTime;
+//import static pp_fp06.PizzaRestaurant.enums.PizzaType.VEGETABLE;
 
 /**
  *
@@ -14,14 +14,14 @@ import static pp_fp06.PizzaRestaurant.enums.PizzaType.VEGETABLE;
  */
 public class Ementa {
 
-    private LocalDateTime date;
-    private final int MAX_PIZZAS = 10;
-    private static final int MAX_MENUS = 1;
-    private Pizza[] pizzalist;
-    private static int counter = 0;
-
-    Ementa() {
-    }
+//    private LocalDateTime date;
+//    private final int MAX_PIZZAS = 10;
+//    private static final int MAX_MENUS = 1;
+//    private Pizza[] pizzalist;
+//    private static int counter = 0;
+//
+//    Ementa() {
+//    }
 
 //    private Ementa(Pizza[] pizzalist) {
 //        if (pizzalist.length > MAX_PIZZAS) {
@@ -50,18 +50,18 @@ public class Ementa {
     
     
 
-    public void printEmenta() {
-        if (counter > 1) {
-            System.out.println("PIZZAS DA EMENTA");
-            System.out.println(date);
-
-            for (Pizza pizzalist1 : pizzalist) {
-                pizzalist1.PrintPizza();
-            }
-        } else {
-            System.out.println("Nenhuma Pizza Vegetariana!!!");
-        }
-
-    }
+//    public void printEmenta() {
+//        if (counter > 1) {
+//            System.out.println("PIZZAS DA EMENTA");
+//            System.out.println(date);
+//
+//            for (Pizza pizzalist1 : pizzalist) {
+//                pizzalist1.PrintPizza();
+//            }
+//        } else {
+//            System.out.println("Nenhuma Pizza Vegetariana!!!");
+//        }
+//
+//    }
 
 }

@@ -6,6 +6,7 @@
 package pp_fp06.PizzaRestaurant.Ingredients;
 
 import pp_fp06.PizzaRestaurant.enums.IngredientMeasureUnits;
+import static pp_fp06.PizzaRestaurant.enums.IngredientMeasureUnits.*;
 import pp_fp06.PizzaRestaurant.enums.PizzaBase;
 
 /**
@@ -13,17 +14,20 @@ import pp_fp06.PizzaRestaurant.enums.PizzaBase;
  * @author Jorge Moreira
  */
 public class Base extends Ingredient {
-    PizzaBase type;
-    String description;
+    private PizzaBase type;
+    private String description;
 
-    public Base(PizzaBase type, String description) {
+    public Base(PizzaBase type, String description, int id, String name, IngredientMeasureUnits measureUnit, float calories) {
+        super(id, name, measureUnit, calories);
         this.type = type;
         this.description = description;
     }
 
+    
+
     public Base(PizzaBase type, String description, int id, 
-           String name, IngredientMeasureUnits measureUnit, float calories) {
-        super(id, name, measureUnit, calories);
+           String name, float calories) {
+        super(id, name, GRAMAS, calories);
         this.type = type;
         this.description = description;
     }
@@ -44,6 +48,15 @@ public class Base extends Ingredient {
         this.description = description;
     }
     
+    public String ToString(){
+        String text = "";
+        
+        text += super.toString();
+        text += "Tipo : " + type + "\n";
+        text += "Descricao : " + description + "\n";
+        
+        return text;            
+    }
     
     
     

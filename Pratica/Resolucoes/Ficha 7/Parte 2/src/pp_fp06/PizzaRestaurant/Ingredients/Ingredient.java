@@ -12,13 +12,14 @@ import pp_fp06.PizzaRestaurant.enums.IngredientMeasureUnits;
  * @author Jorge Moreira
  */
 public class Ingredient {
-    
+
     private int id;
     private String name;
     private IngredientMeasureUnits measureUnit;
     private float calories;
-    
-    Ingredient(){
+
+    Ingredient() {
+
     }
 
     public Ingredient(int id, String name, IngredientMeasureUnits measureUnit, float calories) {
@@ -26,11 +27,6 @@ public class Ingredient {
         this.name = name;
         this.measureUnit = measureUnit;
         this.calories = calories;
-    }
-
-    @Override
-    public String toString() {
-        return "Ingredient{" + "id=" + id + ", name=" + name + ", measureUnit=" + measureUnit + ", calories=" + calories + '}';
     }
 
     public int getId() {
@@ -65,9 +61,30 @@ public class Ingredient {
         this.calories = calories;
     }
 
-    public String getid() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    @Override
+    public String toString() {
+        String text = "";
+
+        text += "ID : " + id + "\n";
+        text += "Nome : " + name + "\n";
+        text += "Unidade de Media : " + measureUnit + "\n";
+        text += "Calorias : " + calories + "\n";
+
+        return text;
     }
     
     
+    
+    public static void ListToString(Ingredient[] list) {
+
+        System.out.println("LISTA");
+        for (int i = 0; i < list.length; i++) {
+            System.out.println("ID : " + list[i].id);
+            System.out.println("Nome : " + list[i].name);
+            System.out.println("Unidade de Media : " + list[i].measureUnit);
+            System.out.println("Calorias : " + list[i].calories);
+        }
+
+    }
+
 }

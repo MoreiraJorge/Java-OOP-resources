@@ -13,7 +13,7 @@ import pp_fp06.PizzaRestaurant.enums.IngredientOrigin;
  * @author Jorge Moreira
  */
 public class Toping extends Ingredient {
-    IngredientOrigin origin;
+    private IngredientOrigin origin;
 
     public Toping(IngredientOrigin origin) {
         this.origin = origin;
@@ -33,6 +33,16 @@ public class Toping extends Ingredient {
         this.origin = origin;
     }
     
+    @Override
+    public String toString(){
+        String text = "";
+        
+        text += super.toString() ;
+        text += "Origem : " + origin + "\n";
+        
+        
+        return text;
+    }
     
     
 }

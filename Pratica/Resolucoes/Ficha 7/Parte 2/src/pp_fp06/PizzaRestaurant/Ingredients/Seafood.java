@@ -27,7 +27,15 @@ public class Seafood extends Toping{
         this.type = type;
     }
     
-    
+    @Override
+    public String toString(){
+        String text = "";
+        
+        text += super.toString();
+        text += "tipo : " + type;
+        
+        return text;
+    }
     
     
     

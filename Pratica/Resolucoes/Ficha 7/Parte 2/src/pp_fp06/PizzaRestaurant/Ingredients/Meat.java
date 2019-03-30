@@ -14,7 +14,7 @@ import pp_fp06.PizzaRestaurant.enums.MeatType;
  * @author Jorge Moreira
  */
 public class Meat extends Toping {
-    MeatType type;
+    private MeatType type;
 
     public Meat(MeatType type, IngredientOrigin origin) {
         super(origin);
@@ -25,6 +25,17 @@ public class Meat extends Toping {
            String name, IngredientMeasureUnits measureUnit, float calories) {
         super(origin, id, name, measureUnit, calories);
         this.type = type;
+    }
+    
+    
+    @Override
+    public String toString(){
+        String text = "";
+        
+        text += super.toString();
+        text += "tipo : " + type;
+        
+        return text;
     }
     
     

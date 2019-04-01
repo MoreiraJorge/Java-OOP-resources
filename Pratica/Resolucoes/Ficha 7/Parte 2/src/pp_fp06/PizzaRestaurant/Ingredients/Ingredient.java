@@ -21,6 +21,8 @@ public class Ingredient {
     Ingredient() {
 
     }
+    
+    
 
     public Ingredient(int id, String name, IngredientMeasureUnits measureUnit, float calories) {
         this.id = id;

@@ -43,16 +43,16 @@ public class ContainerOfObjects {
     }
 
     protected Object removeObject(int position) {
-        for (int i = 0; i < objects.length; i++) {
-            if (objects[position] == objects[i]) {
-                for (int j = i; j < objects.length - 1; j++) {
-                    objects[j] = objects[j + 1];
-                }
-                objects[objects.length - 1] = null;
-                return true;
-            }
+        Object tmp = objects[position];
+        int j;
+
+        for (j = position; j < objects.length - 1 && objects[j] != null; j++) {
+            objects[j] = objects[j + 1];
         }
-        return false;
+        objects[j] = null;
+
+
+        return tmp;
     }
 
     protected boolean setObject(int position, Object newObject) {
@@ -67,15 +67,12 @@ public class ContainerOfObjects {
     }
 
     protected int findObject(Object obj) {
-        for (int i = 0; i < objects.length; i++) {
-            if (objects[i] != null) {
-                if (objects[i] == obj){
-                    System.out.println("Objeto encontrado!");
-                    return 1;
-                }
+        for (int i = 0; i < objects.length && objects[i] != null; i++) {
+            if (objects[i] == obj) {
+                System.out.println("Objeto encontrado!");
+                return 1;
             }
         }
-
         System.out.println("Objeto nao encontrado!");
         return 0;
     }

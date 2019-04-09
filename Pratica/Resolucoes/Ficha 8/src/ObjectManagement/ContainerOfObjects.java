@@ -8,14 +8,12 @@ public class ContainerOfObjects {
     /*
      *
      *
-     *
      */
     public ContainerOfObjects(Object[] objects) {
         this.objects = objects;
     }
 
     /*
-     *
      *
      *
      */
@@ -31,6 +29,10 @@ public class ContainerOfObjects {
         objects = new Object[maxSize];
     }
 
+    /*
+     *
+     *
+     */
     protected boolean addObject(Object newObject) {
 
         for (int i = 0; i < objects.length; i++) {
@@ -42,6 +44,11 @@ public class ContainerOfObjects {
         return false;
     }
 
+
+    /*
+     *
+     *
+     */
     protected Object removeObject(int position) {
         Object tmp = objects[position];
         int j;
@@ -51,10 +58,13 @@ public class ContainerOfObjects {
         }
         objects[j] = null;
 
-
         return tmp;
     }
 
+    /*
+     *
+     *
+     */
     protected boolean setObject(int position, Object newObject) {
         if (position >= 0 && position < objects.length) {
             if (objects[position] != null) {
@@ -66,9 +76,13 @@ public class ContainerOfObjects {
         return false;
     }
 
+    /*
+     *
+     *
+     */
     protected int findObject(Object obj) {
         for (int i = 0; i < objects.length && objects[i] != null; i++) {
-            if (objects[i] == obj) {
+            if (objects[i].equals(obj)) {
                 System.out.println("Objeto encontrado!");
                 return 1;
             }
@@ -76,6 +90,9 @@ public class ContainerOfObjects {
         System.out.println("Objeto nao encontrado!");
         return 0;
     }
+
+
+
 
 
 }

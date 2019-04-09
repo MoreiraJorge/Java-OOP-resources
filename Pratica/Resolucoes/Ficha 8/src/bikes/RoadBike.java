@@ -124,32 +124,29 @@ public class RoadBike extends Bicycle {
     /**
      * Printar Bike
      */
-    public void printBike(){
-        System.out.println("-----------------////----------");
-        System.out.print("ID : ");
-        System.out.println(super.getId());
-        System.out.print("Number of Gears: ");
-        System.out.println(super.getNumberOfGears());
-        System.out.print("Cor : ");
-        System.out.println(super.getMainColor());
-        System.out.print("Weel Size : ");
-        System.out.println(super.getWeelSize());
-        System.out.print("Brakes : ");
-        System.out.println(super.getBrakes());
-        System.out.print("Material : ");
-        System.out.println(super.getMaterial());
-        System.out.print("Price : ");
-        System.out.println(super.getPrice());
-        System.out.print("Guarantee : ");
-        System.out.println(super.getGuaranteeYears());
-        System.out.print("Handlebelt : ");
-        System.out.println(handlebelt​);
-        System.out.print("Frame size : ");
-        System.out.println(framesize);
-        System.out.println("---------Observations : ");
-        System.out.println(printobs());
-        
-        
+
+    @Override
+    public String toString(){
+        String text = " ";
+
+        text += super.toString();
+        text += "ID : " + super.getId() + "\n";
+        text += "Number of Gears : " + super.getNumberOfGears() + "\n";
+        text += "Color : " + super.getMainColor() + "\n";
+        text += "Weel Size : " + super.getWeelSize() + "\n";
+        text += "Brakes : " + super.getBrakes() + "\n";
+        text += "Material : " + super.getMaterial() + "\n";
+        text += "Price : " + super.getPrice() + "\n";
+        text += "Guarantee : " + super.getGuaranteeYears() + "\n";
+        text += "Handlebelt : " + handlebelt​ + "\n";
+        text += "Framesize : " + framesize + "\n";
+        text += "Observations : " +  printobs();
+
+        return text;
+
     }
+
+        
+
 
 }

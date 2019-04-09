@@ -53,6 +53,7 @@ public class Bicycle {
      */
     private int guaranteeYears;
 
+
     /**
      * Método construtor para a criação de uma instância de Bycicle
      *
@@ -176,11 +177,20 @@ public class Bicycle {
      */
     @Override
     public String toString() {
-        String text = "ID : " + id + "\n"
+        String text = "(------------------------------------)" + "\n"
+                + "ID : " + id + "\n"
                 + "Number of gears : " + numberOfGears + "\n"
                 + "Cor : " + mainColor + "\n"
                 + "Garantia : " + guaranteeYears + "\n";
         return text;
-}
+    }
+
+    /*
+    public boolean equals(Bicycle bike){
+
+        return super
+    }
+    */
+
 
 }

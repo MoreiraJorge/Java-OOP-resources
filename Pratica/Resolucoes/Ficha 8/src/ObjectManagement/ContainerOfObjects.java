@@ -93,6 +93,23 @@ public class ContainerOfObjects {
         return -1;
     }
 
+    protected void printall(Object[] objects){
+        for(int i = 0; i < objects.length; i++){
+            System.out.println(objects[i].toString());
+        }
+    }
+
+    protected boolean hasObject(Object obj){
+        for (int i = 0; i < objects.length && objects[i] != null; i++) {
+            if (objects[i].equals(obj)) {
+                System.out.println("Objeto Existe!");
+                return true;
+            }
+        }
+        System.out.println("Objeto nao existe!");
+        return false;
+    }
+
 
 
 

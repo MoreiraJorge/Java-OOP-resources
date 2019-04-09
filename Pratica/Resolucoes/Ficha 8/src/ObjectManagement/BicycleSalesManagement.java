@@ -28,9 +28,21 @@ public class BicycleSalesManagement extends ContainerOfObjects{
     }
 
     public Bicycle removeBicycle(Bicycle bike){
-
         int pos = super.findObject(bike);
         return (Bicycle) super.removeObject(pos);
-        
     }
+
+    public boolean setBike(int pos, Bicycle bike){
+        return super.setObject(pos, bike);
+    }
+
+
+    public int findBike(Bicycle bike){
+        return super.findObject(bike);
+    }
+
+    public void printAllBicycles(Bicycle[] list){
+        super.printall(list);
+    }
+
 }

@@ -1,4 +1,6 @@
 package ObjectManagement;
 
-public class BikeToolsManagement {
+public class BikeToolsManagement extends ContainerOfObjects{
+
+
 }

@@ -50,7 +50,9 @@ public class ContainerOfObjects {
      *
      */
     protected Object removeObject(int position) {
+
         Object tmp = objects[position];
+
         int j;
 
         for (j = position; j < objects.length - 1 && objects[j] != null; j++) {
@@ -84,11 +86,11 @@ public class ContainerOfObjects {
         for (int i = 0; i < objects.length && objects[i] != null; i++) {
             if (objects[i].equals(obj)) {
                 System.out.println("Objeto encontrado!");
-                return 1;
+                return i;
             }
         }
         System.out.println("Objeto nao encontrado!");
-        return 0;
+        return -1;
     }
 
 

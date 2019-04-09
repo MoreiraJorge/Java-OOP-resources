@@ -2,15 +2,35 @@ package ObjectManagement;
 
 import bikes.Bicycle;
 
+import java.time.LocalDateTime;
+
 public class BicycleSalesManagement extends ContainerOfObjects{
 
     private int SaleID;
-    private SaleDate data;
+    private LocalDateTime data;
     private double total;
 
 
-    public BicycleSalesManagement(Bicycle[] objects, int saleID, SaleDate data) {
+    public BicycleSalesManagement(Bicycle[] objects, int saleID, LocalDateTime data) {
+        super(objects);
         SaleID = saleID;
         this.data = data;
+    }
+
+    public BicycleSalesManagement(int maxSize, int SaleID, LocalDateTime data){
+        super(maxSize);
+        this.SaleID = SaleID;
+        this.data = data;
+    }
+
+    public boolean addBicycle(Bicycle newBike){
+        return super.addObject(newBike);
+    }
+
+    public Bicycle removeBicycle(Bicycle bike){
+
+        int pos = super.findObject(bike);
+        return (Bicycle) super.removeObject(pos);
+        
     }
 }

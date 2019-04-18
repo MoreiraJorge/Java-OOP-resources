@@ -10,5 +10,23 @@ package enums;
  * @author Jorge Moreira
  */
 public enum ScientificArea {
+    INFORMATICA, BIOMEDICINA;
+    
+    /**
+     * Metodo que imprime a area cientifica
+     * @param area
+     * @return 
+     */
+    public static String ScientificAreaToString(ScientificArea area) {
+        switch (area) {
+            case INFORMATICA:
+                return "Informatica";
+            case BIOMEDICINA:
+                return "Biomedicina";
+            default:
+                return "error";
+        }
+
+    }
     
 }

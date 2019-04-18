@@ -10,5 +10,22 @@ package enums;
  * @author Jorge Moreira
  */
 public enum AdminArea {
+    REC_HUMANOS, SECRETARIA;
     
+    /**
+     * Metodo que imprime a area de trabalho de admins
+     * @param area
+     * @return 
+     */
+    public static String AdminAreaToString(AdminArea area) {
+        switch (area) {
+            case REC_HUMANOS:
+                return "Recursos humanos";
+            case SECRETARIA:
+                return "Secretaria";
+            default:
+                return "error";
+        }
+
+    }
 }

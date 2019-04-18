@@ -10,5 +10,24 @@ package enums;
  * @author Jorge Moreira
  */
 public enum StudentType {
+    TRABALHADOR_ESTUDANTE, ESTUDANTE_NORMAL;
+    
+    /**
+     * Metodo que imprime o tipo de estudante
+     * @param type
+     * @return 
+     */
+    public static String StudentTypeToString(StudentType type) {
+        switch (type) {
+            case TRABALHADOR_ESTUDANTE:
+                return "Trabalhador estudante";
+            case ESTUDANTE_NORMAL:
+                return "Estudante Normal";
+            default:
+                return "error";
+        }
+
+    }
+    
     
 }

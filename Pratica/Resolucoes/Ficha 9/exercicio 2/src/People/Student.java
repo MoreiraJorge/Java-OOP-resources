@@ -5,6 +5,7 @@
  */
 package People;
 
+import Courses.Course;
 import enums.StudentType;
 import java.time.LocalDateTime;
 
@@ -15,12 +16,14 @@ import java.time.LocalDateTime;
 public class Student extends Person {
     private LocalDateTime firstRegist;
     private StudentType stype;
+    private Course course;
 
     public Student(LocalDateTime firstRegist, StudentType stype, 
-                   String code, String name, String address, int phoneNumb) {
+                   String code, String name, String address, int phoneNumb, Course course) {
         super(code, name, address, phoneNumb);
         this.firstRegist = firstRegist;
         this.stype = stype;
+        this.course = course;
     }
     
     @Override
@@ -35,7 +38,7 @@ public class Student extends Person {
         text += super.toString();
         text += "Primeira Matricula" + firstRegist + "\n";
         text += "Tipo de estudante" + StudentType.StudentTypeToString(stype) + "\n";
-
+        text += "Curso : " + course + "\n";
         return text;
     }
     

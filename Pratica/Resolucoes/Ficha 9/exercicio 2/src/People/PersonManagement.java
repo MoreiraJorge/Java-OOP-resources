@@ -9,6 +9,6 @@ package People;
  *
  * @author Jorge Moreira
  */
-public class PersonManagement {
+public class PersonManagement extends containerofobjectsapi.ContainerOfObjects{
     
 }

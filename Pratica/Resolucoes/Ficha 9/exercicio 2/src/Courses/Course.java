@@ -10,5 +10,20 @@ package Courses;
  * @author Jorge Moreira
  */
 public class Course {
+    private String name;
+    private String id;
+
+    public Course(String name, String id) {
+        this.name = name;
+        this.id = id;
+    }
+    
+    @Override
+    public String toString(){
+        String text="";
+        text += "Curso : " + name + "\n";
+        text += "ID : " + id + "\n";    
+        return text;
+    }
     
 }

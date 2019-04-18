@@ -9,6 +9,6 @@ package Courses;
  *
  * @author Jorge Moreira
  */
-public class CourseManagement {
+public class CourseManagement extends containerofobjectsapi.ContainerOfObjects {
     
 }

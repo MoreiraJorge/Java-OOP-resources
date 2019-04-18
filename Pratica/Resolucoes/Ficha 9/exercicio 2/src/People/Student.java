@@ -5,10 +5,38 @@
  */
 package People;
 
+import enums.StudentType;
+import java.time.LocalDateTime;
+
 /**
  *
  * @author Jorge Moreira
  */
-public class Student {
+public class Student extends Person {
+    private LocalDateTime firstRegist;
+    private StudentType stype;
+
+    public Student(LocalDateTime firstRegist, StudentType stype, 
+                   String code, String name, String address, int phoneNumb) {
+        super(code, name, address, phoneNumb);
+        this.firstRegist = firstRegist;
+        this.stype = stype;
+    }
+    
+    @Override
+    void CalcHours() {
+        
+    }
+    
+    @Override
+    public String toString() {
+        String text = "";
+        
+        text += super.toString();
+        text += "Primeira Matricula" + firstRegist + "\n";
+        text += "Tipo de estudante" + StudentType.StudentTypeToString(stype) + "\n";
+
+        return text;
+    }
     
 }

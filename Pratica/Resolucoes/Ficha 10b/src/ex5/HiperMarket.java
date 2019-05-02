@@ -3,7 +3,6 @@ package ex5;
 import Interfaces.HipermarketService;
 
 /**
- *
  * @author Jorge Moreira
  */
 abstract class HiperMarket extends Supermarket implements HipermarketService {
@@ -48,21 +47,14 @@ abstract class HiperMarket extends Supermarket implements HipermarketService {
         aRate = r;
     }
 
-//    @Override
-//    public double computeMonthlyPayment(double ammount, int months) {
-//        double monthlyRate;
-//        double payment;
-//
-//        monthlyRate = (Math.pow(1 + aRate, 1/12) - 1);
-//        payment = ((monthlyRate * ammount) / (1 - Math.pow(1 + monthlyRate, 1/-months)));
-//
-//        return payment;
-//    }
-
     @Override
     public double computeMonthlyPayment(double ammount, int months) {
+        double monthlyRate;
         double payment;
-        payment = (ammount * aRate / 12);
+
+        monthlyRate = (Math.pow(1 + aRate, 1 / 12) - 1);
+        payment = ((monthlyRate * ammount) / (1 - Math.pow(1 + monthlyRate, -months)));
+
         return payment;
     }
 
@@ -84,7 +76,7 @@ abstract class HiperMarket extends Supermarket implements HipermarketService {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         String text = "";
 
         text += super.toString();

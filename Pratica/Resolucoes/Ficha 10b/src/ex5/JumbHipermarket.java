@@ -8,9 +8,9 @@ public class JumbHipermarket extends HiperMarket {
         super(coffeePrice, gasPrice, aRate, potatoPrice, name, vatNumber);
     }
 
-    public int getPoints(double purchaseValue){
-        int points = 0;
-
-        return points;
+    @Override
+    int getPoints(double purchaseValue) {
+        return 0;
     }
+
 }

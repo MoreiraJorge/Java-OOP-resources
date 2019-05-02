@@ -6,7 +6,7 @@ import Interfaces.HipermarketService;
  *
  * @author Jorge Moreira
  */
-public  abstract class HiperMarket extends Supermarket implements HipermarketService {
+abstract class HiperMarket extends Supermarket implements HipermarketService {
     private double coffeePrice;
     private double gasPrice;
     private double aRate;
@@ -19,9 +19,7 @@ public  abstract class HiperMarket extends Supermarket implements HipermarketSer
         this.aRate = aRate;
     }
 
-    public int getPoints(double purchaseValue){
-        return 0;
-    }
+    abstract int getPoints(double purchaseValue);
 
     @Override
     public double getCoffeePrice() {

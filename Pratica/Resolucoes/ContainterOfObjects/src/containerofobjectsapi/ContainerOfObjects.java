@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package containerofobjectsapi;
 
 /**
@@ -14,6 +9,7 @@ public class ContainerOfObjects {
 
     private final int DEFAULT_SIZE = 100;
     private Object objects[];
+    private int counter = 0;
 
     /**
      *
@@ -154,21 +150,13 @@ public class ContainerOfObjects {
      * @return
      */
     
+    protected Object[] getObject() {
+        return objects;
+    }
+
     protected Object[] getObjects() {
-        int count = 0;
-
-        for (int j = 0; j < objects.length; j++) {
-            if (objects[j] == null) {
-                count++;
-                break;
-            }
-        }
-
-        Object[] out = new Object[count];
-        for (int i = 0; i < objects.length && objects[i] != null; i++) {
-            System.arraycopy(objects, i, out, i, objects.length);
-        }
-
+        Object[] out = new Object[counter];
+        System.arraycopy(objects, 0, out, 0, counter);
         return out;
     }
 

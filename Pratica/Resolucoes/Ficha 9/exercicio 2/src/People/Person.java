@@ -23,7 +23,7 @@ abstract class Person {
         this.phoneNumb = phoneNumb;
     }
 
-    abstract void CalcHours();
+    abstract double CalcHours();
 
     @Override
     public String toString() {

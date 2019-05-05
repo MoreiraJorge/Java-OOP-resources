@@ -29,12 +29,13 @@ public class Worker extends Person{
         this.contractPerc = contractPerc;
         this.endContract = endContract;
     }
-    
+
+
     @Override
-    void CalcHours() {
+    double CalcHours() {
+        return 0;
     }
-    
-    
+
     @Override
     public String toString() {
         String text = "";

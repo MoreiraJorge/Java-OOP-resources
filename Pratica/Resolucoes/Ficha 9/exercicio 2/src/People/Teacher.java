@@ -5,22 +5,29 @@
  */
 package People;
 
+import Courses.Course;
+import Courses.CourseManagement;
+import Courses.Subject;
+import Courses.TeacherSubject;
 import enums.AcademicDegree;
 import enums.ScientificArea;
+
 import java.time.LocalDateTime;
 
 /**
- *
  * @author Jorge Moreira
  */
-public class Teacher extends Person{
+public class Teacher extends Person {
+
+    private final int MAX_SUBJECTS = 5;
     private AcademicDegree tdegree;
     private ScientificArea scarea;
     private LocalDateTime beginContract;
     private LocalDateTime endContract;
+    private CourseManagement manage = new CourseManagement(MAX_SUBJECTS);
 
-    public Teacher(AcademicDegree tdegree, ScientificArea scarea, 
-                   LocalDateTime beginContract, LocalDateTime endContract, 
+    public Teacher(AcademicDegree tdegree, ScientificArea scarea,
+                   LocalDateTime beginContract, LocalDateTime endContract,
                    String code, String name, String address, int phoneNumb) {
         super(code, name, address, phoneNumb);
         this.tdegree = tdegree;
@@ -28,18 +35,28 @@ public class Teacher extends Person{
         this.beginContract = beginContract;
         this.endContract = endContract;
     }
-    
-    
-    
-    @Override
-    void CalcHours() {
-        
+
+    public boolean addSubject(Subject subject, double hours) {
+        TeacherSubject mySubject = new TeacherSubject(subject, hours);
+        return manage.addSubject(mySubject);
     }
-    
+
+
+    @Override
+    public double CalcHours() {
+        Object[] tmp = manage.getSubjects();
+        float hours = 0;
+        for (Object out : tmp) {
+            TeacherSubject disc = (TeacherSubject) out;
+            hours += disc.getHours();
+        }
+        return hours;
+    }
+
     @Override
     public String toString() {
         String text = "";
-        
+
         text += super.toString();
         text += "Habilitações : " + AcademicDegree.AcademicDegreeToString(tdegree) + "\n";
         text += "Area de estudos : " + ScientificArea.ScientificAreaToString(scarea) + "\n";
@@ -48,5 +65,9 @@ public class Teacher extends Person{
 
         return text;
     }
-    
+
+    public void printSubjects() {
+        manage.printAll();
+    }
+
 }

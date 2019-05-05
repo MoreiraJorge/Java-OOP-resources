@@ -25,12 +25,12 @@ public class Student extends Person {
         this.stype = stype;
         this.course = course;
     }
-    
+
     @Override
-    void CalcHours() {
-        
+    double CalcHours() {
+        return 0;
     }
-    
+
     @Override
     public String toString() {
         String text = "";

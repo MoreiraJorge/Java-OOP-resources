@@ -6,17 +6,28 @@
 package Courses;
 
 /**
- *
  * @author Jorge Moreira
  */
 public class CourseManagement extends containerofobjectsapi.ContainerOfObjects {
 
-    CourseManagement(int maxSize) {
+    public CourseManagement(int maxSize) {
         super(maxSize);
     }
 
-    public boolean addSubject(Subject s) {
-        return super.addObject(s);
+    public boolean addSubject(Subject subjects) {
+        if (super.hasObject(subjects)) {
+            return false;
+        } else {
+            return super.addObject(subjects);
+        }
+    }
+
+    public boolean addSubject(TeacherSubject Subject) {
+        if (super.hasObject(Subject)) {
+            return false;
+        } else {
+            return super.addObject(Subject);
+        }
     }
 
     public boolean removeSubject(Subject s) {
@@ -25,6 +36,14 @@ public class CourseManagement extends containerofobjectsapi.ContainerOfObjects {
     }
 
     public void print() {
+        super.printall();
+    }
+
+    public Object[] getSubjects() {
+        return super.getObjects();
+    }
+
+    public void printAll() {
         super.printall();
     }
 

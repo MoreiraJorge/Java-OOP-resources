@@ -11,9 +11,9 @@ package Courses;
  */
 public class Course {
     private String name;
-    private String id;
+    private int id;
 
-    public Course(String name, String id) {
+    public Course(String name, int id) {
         this.name = name;
         this.id = id;
     }

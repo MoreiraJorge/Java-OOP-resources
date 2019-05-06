@@ -44,11 +44,11 @@ public class Teacher extends Person {
 
     @Override
     public double CalcHours() {
+        double hours = 0.0;
         Object[] tmp = manage.getSubjects();
-        float hours = 0;
         for (Object out : tmp) {
-            TeacherSubject disc = (TeacherSubject) out;
-            hours += disc.getHours();
+            TeacherSubject sub = (TeacherSubject) out;
+            hours += sub.getHours();
         }
         return hours;
     }

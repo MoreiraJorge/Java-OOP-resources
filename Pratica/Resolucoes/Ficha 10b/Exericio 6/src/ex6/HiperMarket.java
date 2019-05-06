@@ -2,8 +2,6 @@ package ex6;
 
 import Interfaces.HipermarketService;
 
-import java.time.LocalDateTime;
-
 /**
  * @author Jorge Moreira
  */
@@ -89,6 +87,26 @@ abstract class HiperMarket extends Supermarket implements HipermarketService {
     }
 
 
+    public static HiperMarket compararCabaz(HiperMarket[] hipergroup,double q, double l, int c){
+        double price =  hipergroup[0].getMarketTotal(q)
+                        + hipergroup[0].getGasTotal(l)
+                        + hipergroup[0].getCoffeeTotal(c);
+
+        int i;
+        for (i = 0; i < hipergroup.length; i++){
+            if(hipergroup[i].getMarketTotal(q)+hipergroup[i].getGasTotal(l)+hipergroup[i].getCoffeeTotal(c) < price){
+                price = hipergroup[i].getMarketTotal(q)+hipergroup[i].getGasTotal(l)+hipergroup[i].getCoffeeTotal(c);
+            }
+        }
+
+        for (i = 0; i < hipergroup.length; i++){
+            if(hipergroup[i].getMarketTotal(q)+hipergroup[i].getGasTotal(l)+hipergroup[i].getCoffeeTotal(c) == price){
+                System.out.println(price);
+                return hipergroup[i];
+            }
+        }
+        return null;
+    }
 
 
 

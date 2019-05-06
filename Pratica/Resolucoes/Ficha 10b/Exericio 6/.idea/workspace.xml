@@ -2,54 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6974823e-829a-487b-9224-333cb32dc19e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/CoffeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/CreditService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/GasService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/HipermarketService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/MarketService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex6/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex6/ContinentHipermarket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex6/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex6/HiperMarket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex6/JumbHipermarket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex6/Supermarket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Ficha 9/exercicio 2/.idea/libraries/ContainerOfObjects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/ContainerOfObjectsAPI.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exercicio 5.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Exercicio 5/Interfaces/CoffeeService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Exercicio 5/Interfaces/CreditService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Exercicio 5/Interfaces/GasService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Exercicio 5/Interfaces/HipermarketService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Exercicio 5/Interfaces/MarketService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Exercicio 5/ex5/Company.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Exercicio 5/ex5/ContinentHipermarket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Exercicio 5/ex5/Demo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Exercicio 5/ex5/HiperMarket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Exercicio 5/ex5/JumbHipermarket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Exercicio 5/ex5/Supermarket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/Interfaces/CoffeeService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/Interfaces/CreditService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/Interfaces/GasService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/Interfaces/HipermarketService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/Interfaces/MarketService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/ex5/Company.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/ex5/ContinentHipermarket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/ex5/Demo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/ex5/HiperMarket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/ex5/JumbHipermarket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/ex5/Supermarket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Ficha 9/exercicio 2/.idea/libraries/ContainerOfObjectsAPI.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Ficha 9/exercicio 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ficha 9/exercicio 2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Ficha 9/exercicio 2/Exercicio 2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ficha 9/exercicio 2/Exercicio 2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Ficha 9/exercicio 2/out/production/Exercicio 2/People/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ficha 9/exercicio 2/out/production/Exercicio 2/People/Teacher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Ficha 9/exercicio 2/out/production/Exercicio 2/exercicio/pkg2/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ficha 9/exercicio 2/out/production/Exercicio 2/exercicio/pkg2/Demo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Ficha 9/exercicio 2/src/People/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ficha 9/exercicio 2/src/People/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Ficha 9/exercicio 2/src/exercicio/pkg2/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ficha 9/exercicio 2/src/exercicio/pkg2/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex6/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex6/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex6/HiperMarket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex6/HiperMarket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex6/JumbHipermarket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex6/JumbHipermarket.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ex6/Demo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+            <state relative-caret-position="561">
+              <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -78,7 +33,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ex6/GasStation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
+            <state relative-caret-position="569">
               <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
             </state>
           </provider>
@@ -105,11 +60,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ex6/HiperMarket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="86" column="55" selection-start-line="86" selection-start-column="55" selection-end-line="86" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="467">
+              <caret line="103" column="40" selection-start-line="103" selection-start-column="40" selection-end-line="103" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ex6/Supermarket.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -117,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ex6/JumbHipermarket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+            <state relative-caret-position="561">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -143,11 +104,11 @@
         <option value="$PROJECT_DIR$/src/ex6/Company.java" />
         <option value="$PROJECT_DIR$/src/ex6/Supermarket.java" />
         <option value="$PROJECT_DIR$/src/ex6/LargeGasStation.java" />
-        <option value="$PROJECT_DIR$/src/ex6/JumbHipermarket.java" />
         <option value="$PROJECT_DIR$/src/ex6/ContinentHipermarket.java" />
-        <option value="$PROJECT_DIR$/src/ex6/HiperMarket.java" />
-        <option value="$PROJECT_DIR$/src/ex6/Demo.java" />
         <option value="$PROJECT_DIR$/src/ex6/GasStation.java" />
+        <option value="$PROJECT_DIR$/src/ex6/JumbHipermarket.java" />
+        <option value="$PROJECT_DIR$/src/ex6/Demo.java" />
+        <option value="$PROJECT_DIR$/src/ex6/HiperMarket.java" />
       </list>
     </option>
   </component>
@@ -196,10 +157,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -248,12 +211,12 @@
       <workItem from="1557160880638" duration="748000" />
       <workItem from="1557161650643" duration="821000" />
       <workItem from="1558717694195" duration="94000" />
-      <workItem from="1558113061858" duration="4323000" />
+      <workItem from="1558113061858" duration="8120000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6022000" />
+    <option name="totallyTimeSpent" value="9819000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -367,37 +330,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ex6/LargeGasStation.java" />
-    <entry file="file://$PROJECT_DIR$/src/ex6/Supermarket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ex6/HiperMarket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="86" column="55" selection-start-line="86" selection-start-column="55" selection-end-line="86" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ex6/ContinentHipermarket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ex6/JumbHipermarket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Interfaces/GasService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -412,17 +344,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ex6/Supermarket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ex6/ContinentHipermarket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ex6/JumbHipermarket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ex6/GasStation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
+        <state relative-caret-position="569">
           <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ex6/HiperMarket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="103" column="40" selection-start-line="103" selection-start-column="40" selection-end-line="103" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ex6/Demo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        <state relative-caret-position="561">
+          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
         </state>
       </provider>
     </entry>

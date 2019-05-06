@@ -32,6 +32,7 @@ public class JumbHipermarket extends HiperMarket {
 
     }
 
+
     @Override
     public String getName(){
         return super.getName();

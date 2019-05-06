@@ -25,9 +25,13 @@ public class Demo {
         GasStation g5 = new GasStation(1.50,"Station 5", "5", 127);
 
         GasStation group[] = {g1, g2, g3, g4, g5};
+        HiperMarket hgroup[] = {Cont1 , jumb1};
 
         GasStation gf = GasStation.verify(group);
         System.out.println(gf.toString());
+
+        HiperMarket gh = HiperMarket.compararCabaz(hgroup,12.5,10.0,5);
+        System.out.println(gh.toString());
 
     }
 }

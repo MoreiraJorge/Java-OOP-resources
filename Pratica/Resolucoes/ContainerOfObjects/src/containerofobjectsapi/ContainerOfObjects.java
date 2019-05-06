@@ -4,7 +4,6 @@ package containerofobjectsapi;
  *
  * @author Jorge Moreira
  */
-
 public class ContainerOfObjects {
 
     private final int DEFAULT_SIZE = 100;
@@ -15,7 +14,6 @@ public class ContainerOfObjects {
      *
      * @param objects
      */
-    
     public ContainerOfObjects(Object[] objects) {
         this.objects = objects;
     }
@@ -24,7 +22,6 @@ public class ContainerOfObjects {
      *
      * Constructor que cria array de objects com Default size 100
      */
-    
     public ContainerOfObjects() {
         objects = new Object[DEFAULT_SIZE];
     }
@@ -34,7 +31,6 @@ public class ContainerOfObjects {
      *
      * @param maxSize
      */
-    
     public ContainerOfObjects(int maxSize) {
         objects = new Object[maxSize];
     }
@@ -45,7 +41,6 @@ public class ContainerOfObjects {
      * @param newObject
      * @return
      */
-    
     protected boolean addObject(Object newObject) {
 
         for (int i = 0; i < objects.length; i++) {
@@ -63,7 +58,6 @@ public class ContainerOfObjects {
      * @param position
      * @return
      */
-    
     protected Object removeObject(int position) {
 
         Object tmp = objects[position];
@@ -77,7 +71,7 @@ public class ContainerOfObjects {
 
         return tmp;
     }
-    
+
     /**
      * metodo que substitui objects do array por outros inseridos pelo user
      *
@@ -85,7 +79,6 @@ public class ContainerOfObjects {
      * @param newObject
      * @return
      */
-    
     protected boolean setObject(int position, Object newObject) {
         if (position >= 0 && position < objects.length) {
             if (objects[position] != null) {
@@ -103,7 +96,6 @@ public class ContainerOfObjects {
      * @param obj
      * @return
      */
-    
     protected int findObject(Object obj) {
         for (int i = 0; i < objects.length && objects[i] != null; i++) {
             if (objects[i].equals(obj)) {
@@ -117,10 +109,9 @@ public class ContainerOfObjects {
 
     /**
      * metodo que imprime a informação dos objects no array
-     * 
+     *
      *
      */
-    
     protected void printall() {
         for (int i = 0; i < objects.length && objects[i] != null; i++) {
             System.out.println(objects[i].toString());
@@ -133,7 +124,6 @@ public class ContainerOfObjects {
      * @param obj
      * @return
      */
-    
     protected boolean hasObject(Object obj) {
         for (int i = 0; i < objects.length && objects[i] != null; i++) {
             if (objects[i].equals(obj)) {
@@ -149,7 +139,6 @@ public class ContainerOfObjects {
      *
      * @return
      */
-    
     protected Object[] getObject() {
         return objects;
     }

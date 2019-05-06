@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5912a1b1-a8c4-4ec8-a962-c9a1ce02c8bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Courses/StudentSubject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Courses/TeacherSubject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ContainerAPI/ContainerOfObjectsAPI/src/containerofobjectsapi/ContainerOfObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ContainerAPI/ContainerOfObjectsAPI/src/containerofobjectsapi/ContainerOfObjects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercicio 2/Courses/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exercicio 2/Courses/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercicio 2/Courses/CourseManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exercicio 2/Courses/CourseManagement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercicio 2/Courses/Subject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exercicio 2/Courses/Subject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercicio 2/People/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exercicio 2/People/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercicio 2/People/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exercicio 2/People/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercicio 2/People/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exercicio 2/People/Teacher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercicio 2/People/Worker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exercicio 2/People/Worker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercicio 2/exercicio/pkg2/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exercicio 2/exercicio/pkg2/Demo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Courses/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Courses/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Courses/CourseManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Courses/CourseManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Courses/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Courses/Subject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/People/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/People/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/People/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/People/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/People/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/People/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/People/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/People/Worker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicio/pkg2/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicio/pkg2/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ContainterOfObjects/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ContainterOfObjects/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,103 +15,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/exercicio/pkg2/Demo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Courses/TeacherSubject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/People/Worker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="jar://$PROJECT_DIR$/../../ContainerAPI/ContainerOfObjectsAPI/dist/ContainerOfObjectsAPI.jar!/containerofobjectsapi/ContainerOfObjects.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="597">
-              <caret line="103" column="5" lean-forward="true" selection-start-line="86" selection-start-column="4" selection-end-line="103" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Courses/Subject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
-              <folding>
-                <element signature="e#665#666#0" expanded="true" />
-                <element signature="e#691#692#0" expanded="true" />
-                <element signature="e#716#717#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/People/Student.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/People/Teacher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/People/Person.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Courses/CourseManagement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -171,68 +56,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Exercicio 2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Exercicio 2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Exercicio 2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Exercicio 2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Exercicio 2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Exercicio 2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Courses" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Exercicio 2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Exercicio 2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Exercicio 2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Exercicio 2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pkg2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Exercicio 2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Exercicio 2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="People" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Exercicio 2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="Exercicio 2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="ContainerOfObjectsAPI" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="Exercicio 2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="ContainerOfObjectsAPI" type="70bed36:NamedLibraryElementNode" />
-              <item name="ContainerOfObjectsAPI.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Exercicio 2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="ContainerOfObjectsAPI" type="70bed36:NamedLibraryElementNode" />
-              <item name="ContainerOfObjectsAPI.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="containerofobjectsapi" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
@@ -293,16 +117,17 @@
       <workItem from="1556989701933" duration="3530000" />
       <workItem from="1557073055750" duration="3611000" />
       <workItem from="1557077187346" duration="88000" />
+      <workItem from="1557095293054" duration="234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7229000" />
+    <option name="totallyTimeSpent" value="7463000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25704697" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26040268" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -379,9 +204,10 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/../../ContainerAPI/ContainerOfObjectsAPI/dist/ContainerOfObjectsAPI.jar!/containerofobjectsapi/ContainerOfObjects.class" />
     <entry file="file://$PROJECT_DIR$/src/exercicio/pkg2/Demo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
+        <state relative-caret-position="573">
           <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -393,6 +219,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/People/Worker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -415,13 +251,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/People/Teacher.java">
+    <entry file="file://$PROJECT_DIR$/src/Courses/CourseManagement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
-          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>
@@ -432,27 +265,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Courses/CourseManagement.java">
+    <entry file="file://$PROJECT_DIR$/src/People/Teacher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/People/Worker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        <state relative-caret-position="425">
+          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../ContainerAPI/ContainerOfObjectsAPI/dist/ContainerOfObjectsAPI.jar!/containerofobjectsapi/ContainerOfObjects.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="103" column="5" lean-forward="true" selection-start-line="86" selection-start-column="4" selection-end-line="103" selection-end-column="5" />
         </state>
       </provider>
     </entry>

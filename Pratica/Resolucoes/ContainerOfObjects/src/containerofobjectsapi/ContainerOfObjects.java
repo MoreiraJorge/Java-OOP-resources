@@ -42,14 +42,13 @@ public class ContainerOfObjects {
      * @return
      */
     protected boolean addObject(Object newObject) {
-
-        for (int i = 0; i < objects.length; i++) {
-            if (objects[i] == null) {
-                objects[i] = newObject;
-                return true;
-            }
+        if (counter < objects.length) {
+            objects[counter] = newObject;
+            counter += 1;
+            return true;
+        } else {
+            return false;
         }
-        return false;
     }
 
     /**
@@ -59,17 +58,24 @@ public class ContainerOfObjects {
      * @return
      */
     protected Object removeObject(int position) {
-
-        Object tmp = objects[position];
-
-        int j;
-
-        for (j = position; j < objects.length - 1 && objects[j] != null; j++) {
-            objects[j] = objects[j + 1];
-        }
-        objects[j] = null;
-
-        return tmp;
+       if (position < objects.length && position != -1) {
+            if (objects[position] == null) {
+                System.out.println("Objecto não existe");
+                return null;
+            } else {
+                Object delete = objects[position];
+                objects[position] = null;
+                for (int i = position; i < (counter - 1); i++) {
+                    objects[i] = objects[i + 1];
+                }
+                counter -= 1;
+                objects[counter] = null;
+                return delete;
+            }
+        } else {
+            System.out.println("Posição Inexistente");
+            return null;
+        } 
     }
 
     /**
@@ -80,14 +86,18 @@ public class ContainerOfObjects {
      * @return
      */
     protected boolean setObject(int position, Object newObject) {
-        if (position >= 0 && position < objects.length) {
-            if (objects[position] != null) {
+        if (position < objects.length) {
+            if (objects[position] == null) {
+                System.out.println("Não existe nenhum objeto nesta postição.");
+                return false;
+            } else {
                 objects[position] = newObject;
                 return true;
             }
-
+        } else {
+            System.out.println("Posição Inexistente");
+            return false;
         }
-        return false;
     }
 
     /**
@@ -106,18 +116,7 @@ public class ContainerOfObjects {
         System.out.println("Objeto nao encontrado!");
         return -1;
     }
-
-    /**
-     * metodo que imprime a informação dos objects no array
-     *
-     *
-     */
-    protected void printall() {
-        for (int i = 0; i < objects.length && objects[i] != null; i++) {
-            System.out.println(objects[i].toString());
-        }
-    }
-
+    
     /**
      * metodo que verifica a existencia de um object no array
      *
@@ -136,13 +135,30 @@ public class ContainerOfObjects {
     }
 
     /**
+     * metodo que imprime a informação dos objects no array
+     *
+     *
+     */
+    protected void printall() {
+        for (int i = 0; i < objects.length && objects[i] != null; i++) {
+            System.out.println(objects[i].toString());
+        }
+    }
+    
+    /**
+     * Metodo de acesso para obter a referencia do Array de objetos
      *
      * @return
      */
-    protected Object[] getObject() {
+    public Object[] getObject() {
         return objects;
     }
-
+    
+    /**
+     * Metodo para obter parte do array com informação
+     *
+     * @return
+     */
     protected Object[] getObjects() {
         Object[] out = new Object[counter];
         System.arraycopy(objects, 0, out, 0, counter);

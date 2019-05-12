@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6974823e-829a-487b-9224-333cb32dc19e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ex6/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex6/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ex6/HiperMarket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex6/HiperMarket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ex6/JumbHipermarket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex6/JumbHipermarket.java" afterDir="false" />
-    </list>
+    <list default="true" id="6974823e-829a-487b-9224-333cb32dc19e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -211,12 +207,12 @@
       <workItem from="1557160880638" duration="748000" />
       <workItem from="1557161650643" duration="821000" />
       <workItem from="1558717694195" duration="94000" />
-      <workItem from="1558113061858" duration="8120000" />
+      <workItem from="1558113061858" duration="8171000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9819000" />
+    <option name="totallyTimeSpent" value="9870000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

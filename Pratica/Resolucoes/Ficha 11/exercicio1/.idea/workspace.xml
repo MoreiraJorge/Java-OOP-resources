@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8eda874-859e-44de-bf1a-fadc5dd46c46" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CustomExceptions/FullMemoryException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CustomExceptions/NonSuportedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/AppFunctions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/PPodDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pod/File.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pod/PPod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Ficha 10b/Exericio 6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ficha 10b/Exericio 6/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f8eda874-859e-44de-bf1a-fadc5dd46c46" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +20,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pod/File.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
+            <state relative-caret-position="459">
               <caret line="39" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
@@ -39,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pod/PPod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="417">
+              <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interfaces/AppFunctions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+            <state relative-caret-position="459">
+              <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,8 +101,8 @@
         <option value="$PROJECT_DIR$/src/CustomExceptions/FullMemoryException.java" />
         <option value="$PROJECT_DIR$/src/pod/File.java" />
         <option value="$PROJECT_DIR$/src/CustomExceptions/NonSuportedException.java" />
-        <option value="$PROJECT_DIR$/src/Interfaces/AppFunctions.java" />
         <option value="$PROJECT_DIR$/src/main/PPodDemo.java" />
+        <option value="$PROJECT_DIR$/src/Interfaces/AppFunctions.java" />
         <option value="$PROJECT_DIR$/src/pod/PPod.java" />
       </list>
     </option>
@@ -233,12 +223,12 @@
       <updated>1558600004945</updated>
       <workItem from="1558600006307" duration="2028000" />
       <workItem from="1558602184566" duration="7870000" />
-      <workItem from="1558712612203" duration="5964000" />
+      <workItem from="1558712612203" duration="6241000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15862000" />
+    <option name="totallyTimeSpent" value="16139000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -255,7 +245,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4965278" visible="true" weight="0.12281879" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4965278" visible="true" weight="0.12281879" />
       <window_info id="Structure" order="1" sideWeight="0.5034722" side_tool="true" weight="0.1295573" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -265,7 +255,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49804688" weight="0.22108346" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49731544" visible="true" weight="0.39824304" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49731544" visible="true" weight="0.045387994" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49798658" weight="0.32796487" />
@@ -379,23 +369,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pod/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/AppFunctions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/PPodDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
@@ -406,10 +379,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pod/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/AppFunctions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pod/PPod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="417">
+          <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

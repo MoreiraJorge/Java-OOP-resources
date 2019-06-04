@@ -11,9 +11,19 @@ public class PPod implements AppFunctions {
     private double filledmemory = 0;
     private int filecount = 0;
     private int currentTrack;
+    private Shuffle.metodo metodo;
+
+
+    public PPod(double memory, Shuffle.metodo metodo) {
+        this.memory = memory;
+        this.metodo = metodo;
+    }
 
     public PPod(double memory) {
         this.memory = memory;
+    }
+
+    public PPod(){
     }
 
 
@@ -64,11 +74,11 @@ public class PPod implements AppFunctions {
             if (files[index].getExtention() != "mp3") {
                 throw new NonSuportedException("Ficheiro não suportado");
             }
-            if (index > files.length || index < 0) {
+            if (index >= files.length || index < 0) {
                 throw new ArrayIndexOutOfBoundsException("Index Inválido");
             }
 
-            if ("mp3".equals(files[index].getExtention())) {
+            if (files[index].getExtention().equals("mp3")) {
                 System.out.println(files[index].toString());
                 currentTrack = index;
             }
@@ -84,6 +94,7 @@ public class PPod implements AppFunctions {
                 return;
             } catch (NonSuportedException e){
                 System.out.println(e.getMessage());
+                currentTrack++;
                 continue;
             } catch (NullPointerException e){
                 System.out.println(e.getMessage());
@@ -99,11 +110,12 @@ public class PPod implements AppFunctions {
         int previous;
         for (int i = currentTrack; i >= 0; i--){
             try {
-                previous = currentTrack--;
+                previous = currentTrack - 1;
                 playTrack(previous);
                 return;
             } catch (NonSuportedException e){
                 System.out.println(e.getMessage());
+                currentTrack--;
             } catch (NullPointerException e){
                 System.out.println(e.getMessage());
             } catch (ArrayIndexOutOfBoundsException e){
@@ -111,4 +123,17 @@ public class PPod implements AppFunctions {
             }
         }
     }
+
+    public void ShufflePlay(){
+
+        Shuffle.sort(metodo, files);
+
+        try {
+            playTrack(0);
+        } catch (NonSuportedException e) {
+            e.printStackTrace();
+        }
+
+    }
+
 }

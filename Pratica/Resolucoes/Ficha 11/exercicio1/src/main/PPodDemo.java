@@ -4,11 +4,13 @@ import CustomExceptions.FullMemoryException;
 import CustomExceptions.NonSuportedException;
 import pod.File;
 import pod.PPod;
+import pod.Shuffle;
+
 
 public class PPodDemo {
 
     public static void main(String[] args) {
-        PPod pod1 = new PPod(100.0);
+        PPod pod1 = new PPod(100.0, Shuffle.metodo.ORDEM_ALFA);
         File f1 = new File("aa","wmv", 1.0, 120);
         File f2 = new File("bb","mp3", 1.0, 120);
         File f3 = new File("cc","mp3", 1.0, 120);
@@ -47,11 +49,15 @@ public class PPodDemo {
             System.out.println(e.getMessage());
         }
 
-        pod1.nextTrack();
-        pod1.nextTrack();
+       //pod1.nextTrack();
+       //pod1.nextTrack();
+       //pod1.nextTrack();
+       //pod1.previousTrack();
+       //pod1.previousTrack()
+       //pod1.previousTrack();
 
-        //pod1.previousTrack();
-
+        pod1.ShufflePlay();
+        pod1.nextTrack();
 
     }
 }

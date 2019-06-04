@@ -3,6 +3,7 @@ package Interfaces;
 import CustomExceptions.FullMemoryException;
 import CustomExceptions.NonSuportedException;
 import pod.File;
+import pod.Shuffle;
 
 public interface AppFunctions {
     /**
@@ -40,6 +41,8 @@ public interface AppFunctions {
      * metodo de escolher a musica anterior
      */
     public void previousTrack();
+
+    public void ShufflePlay();
 
 
 

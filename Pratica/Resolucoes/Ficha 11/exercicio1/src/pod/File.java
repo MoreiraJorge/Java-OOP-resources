@@ -38,9 +38,18 @@ public class File {
         this.duracao = duracao;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
     public String toString(){
         String text = "Nome : " + nome + "\n";
         text += "Duração : "+ duracao + "\n";
         return text;
     }
+
 }

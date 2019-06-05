@@ -27,8 +27,8 @@ public class Demo {
         
         try {
             // TODO code application logic here
-             //Contact cont1 = new NationalContact("Jo rge", "Moreira", "910329260");
-             //Contact cont2 = new NationalContact("Miguel", "Co sta", "912367261");
+             Contact cont1 = new InternationalContact("00987", "Angola", "Tiago", "Rodrigues", "910329260");
+             Contact cont2 = new InternationalContact("00345", "Islandia","Tiago", "Rodrigues", "923326544");
              Contact cont3 = new NationalContact("Tiago", "Rodrigues", "923326560");
              Contact cont4 = new NationalContact("Samuel", "Cunha", "910329264");
              Contact cont5 = new NationalContact("Marcelo", "Carvalho", "912329260");
@@ -41,12 +41,16 @@ public class Demo {
              g1.addContact(cont6);
              g1.addContact(cont4);
              g1.addContact(cont3);
+             g1.addContact(cont2);
+             g1.addContact(cont1);
              g1.removeContact("910329264");
              //g1.removeContact("910329260");
              //g1.removeContact("912329260");
              g1.CollectiontoString();
              System.out.println("-----------test get---------------");
              g1.getContact("910329260");
+             System.out.println("-----------test getInterByName---------------");
+             g1.getInternationalContactByName("Tiago");
         } catch (MultipleWordsException | NotCapitalCharException | NumberLengthException | CountryCodeException e){
             System.out.println(e.getMessage());
         }

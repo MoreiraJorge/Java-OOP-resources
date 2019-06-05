@@ -83,13 +83,25 @@ public class GestContact implements GestFucntions {
 //        return null;
 //    }
     /**
-     * 
+     * Retorna um contacto usando um numero de telemovel
      * @param phone 
      */
     @Override
     public void getContact(String phone) {
         for (int i = 0; i < counter; i++) {
             if (collection1[i].getPhoneNmbr().equals(phone)) {
+                System.out.println(collection1[i].toString());
+            }
+        }
+    }
+    
+    /**
+     * Retorna todos os contactos internacionais de um nome
+     * @param name 
+     */
+    public void getInternationalContactByName(String name){
+        for (int i = 0; i < counter; i++) {
+            if (collection1[i] instanceof InternationalContact && collection1[i].getName().equals(name)) {
                 System.out.println(collection1[i].toString());
             }
         }

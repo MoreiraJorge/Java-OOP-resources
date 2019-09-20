@@ -3,8 +3,13 @@ package pod;
 import CustomExceptions.FullMemoryException;
 import CustomExceptions.NonSuportedException;
 import Interfaces.AppFunctions;
+import Interfaces.PpodStates;
+import java.io.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-public class PPod implements AppFunctions {
+public class PPod implements AppFunctions, java.io.Serializable, PpodStates {
+
     private final int MAX = 20;
     private File files[] = new File[MAX];
     private double memory;
@@ -12,7 +17,6 @@ public class PPod implements AppFunctions {
     private int filecount = 0;
     private int currentTrack;
     private Shuffle.metodo metodo;
-
 
     public PPod(double memory, Shuffle.metodo metodo) {
         this.memory = memory;
@@ -23,9 +27,8 @@ public class PPod implements AppFunctions {
         this.memory = memory;
     }
 
-    public PPod(){
+    public PPod() {
     }
-
 
     @Override
     public void addfile(File file) throws NullPointerException, IndexOutOfBoundsException, FullMemoryException {
@@ -50,17 +53,17 @@ public class PPod implements AppFunctions {
 
     @Override
     public void delete(int index) throws ArrayIndexOutOfBoundsException, NullPointerException {
-        if(index > files.length){
+        if (index > files.length) {
             throw new ArrayIndexOutOfBoundsException("Index Inválido");
         }
-        if(files[index] == null){
+        if (files[index] == null) {
             throw new NullPointerException("a posicao esta vazia");
         }
         files[index] = null;
         for (int i = index; i < (filecount - 1); i++) {
             files[i] = files[i + 1];
         }
-        filecount-= 1;
+        filecount -= 1;
         files[filecount] = null;
     }
 
@@ -85,46 +88,48 @@ public class PPod implements AppFunctions {
         }
     }
 
-    public void nextTrack(){
+    @Override
+    public void nextTrack() {
         int next;
-        for (int i = currentTrack; i < MAX; i++){
+        for (int i = currentTrack; i < MAX; i++) {
             try {
-                next = currentTrack+1;
+                next = currentTrack + 1;
                 playTrack(next);
                 return;
-            } catch (NonSuportedException e){
+            } catch (NonSuportedException e) {
                 System.out.println(e.getMessage());
                 currentTrack++;
                 continue;
-            } catch (NullPointerException e){
+            } catch (NullPointerException e) {
                 System.out.println(e.getMessage());
                 break;
-            } catch (ArrayIndexOutOfBoundsException e){
+            } catch (ArrayIndexOutOfBoundsException e) {
                 System.out.println(e.getMessage());
                 break;
             }
         }
     }
 
-    public void previousTrack(){
+    @Override
+    public void previousTrack() {
         int previous;
-        for (int i = currentTrack; i >= 0; i--){
+        for (int i = currentTrack; i >= 0; i--) {
             try {
                 previous = currentTrack - 1;
                 playTrack(previous);
                 return;
-            } catch (NonSuportedException e){
+            } catch (NonSuportedException e) {
                 System.out.println(e.getMessage());
                 currentTrack--;
-            } catch (NullPointerException e){
+            } catch (NullPointerException e) {
                 System.out.println(e.getMessage());
-            } catch (ArrayIndexOutOfBoundsException e){
+            } catch (ArrayIndexOutOfBoundsException e) {
                 System.out.println(e.getMessage());
             }
         }
     }
 
-    public void ShufflePlay(){
+    public void ShufflePlay() {
 
         Shuffle.sort(metodo, files);
 
@@ -132,6 +137,45 @@ public class PPod implements AppFunctions {
             playTrack(0);
         } catch (NonSuportedException e) {
             e.printStackTrace();
+        }
+
+    }
+
+    @Override
+    public void backup(String filePath) {
+
+        try {
+            ObjectOutputStream outp = new ObjectOutputStream(new FileOutputStream(filePath));
+            for (int i = 0; i <= files.length; i++) {
+                if (files[i] != null) {
+                    outp.writeObject(files[i]);
+                }
+            }
+            
+        } catch (IOException ex) {
+            Logger.getLogger(PPod.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }
+
+    @Override
+    public void recover(String filePath) {
+        try {
+
+            ObjectInputStream inp = new ObjectInputStream(new FileInputStream(filePath));
+
+            for (int i = 0; i <= files.length; i++) {
+                Object tmp = new File();
+                tmp = (File) inp.readObject();
+                files[i] = (pod.File) tmp;
+
+            }
+
+            inp.close();
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(PPod.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException | ClassNotFoundException ex) {
+            Logger.getLogger(PPod.class.getName()).log(Level.SEVERE, null, ex);
         }
 
     }

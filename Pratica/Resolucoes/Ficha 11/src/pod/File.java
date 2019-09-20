@@ -7,6 +7,9 @@ public class File {
     private int duracao;
     private String nome;
 
+    public File() {
+    }
+
     public File(String nome, String extention, double size, int duracao) {
         this.nome = nome;
         this.extention = extention;

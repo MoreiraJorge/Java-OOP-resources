@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="ContainerOfObjects">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../ContainerOfObjects/dist/ContainerOfObjects.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

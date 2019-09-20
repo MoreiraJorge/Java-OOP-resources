@@ -38,7 +38,7 @@ public class Teacher extends Person {
 
     public boolean addSubject(Subject subject, double hours) {
         TeacherSubject mySubject = new TeacherSubject(subject, hours);
-        return manage.addSubject(mySubject);
+        return manage.addSubject(subject, mySubject);
     }
 
 

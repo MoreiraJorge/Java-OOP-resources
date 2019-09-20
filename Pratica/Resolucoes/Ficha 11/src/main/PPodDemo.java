@@ -35,25 +35,23 @@ public class PPodDemo {
         }
 
 
-        try{
-           // pod1.delete(0);
-        }catch (ArrayIndexOutOfBoundsException e){
-            System.out.println(e.getMessage());
-        }catch (NullPointerException e){
-            System.out.println(e.getMessage());
-        }
-
-        try{
-            pod1.playTrack(0);
-        } catch (NonSuportedException e){
-            System.out.println(e.getMessage());
-        }
-
-       pod1.nextTrack();
-       pod1.nextTrack();
-       pod1.nextTrack();
-       pod1.nextTrack();
-       pod1.nextTrack();
+//        try{
+//           // pod1.delete(0);
+//        }catch (ArrayIndexOutOfBoundsException e){
+//            System.out.println(e.getMessage());
+//        }catch (NullPointerException e){
+//            System.out.println(e.getMessage());
+//        }
+//
+//        try{
+//            pod1.playTrack(0);
+//        } catch (NonSuportedException e){
+//            System.out.println(e.getMessage());
+//        }
+       
+       pod1.backup("podInfo.txt");
+       //pod1.recover("podInfo.txt");
+       
        
        //pod1.previousTrack();
        //pod1.previousTrack()

@@ -5,6 +5,8 @@
  */
 package Courses;
 
+import java.util.Objects;
+
 /**
  * @author Jorge Moreira
  */
@@ -14,19 +16,15 @@ public class CourseManagement extends containerofobjectsapi.ContainerOfObjects {
         super(maxSize);
     }
 
-    public boolean addSubject(Subject subjects) {
-        if (super.hasObject(subjects)) {
-            return false;
+    public boolean addSubject(Subject subject, TeacherSubject Tsubject) {
+        
+        boolean test = this.equals(subject, Tsubject);
+        
+        if (test = true){
+            super.addObject(Tsubject);
+            return true;
         } else {
-            return super.addObject(subjects);
-        }
-    }
-
-    public boolean addSubject(TeacherSubject Subject) {
-        if (super.hasObject(Subject)) {
             return false;
-        } else {
-            return super.addObject(Subject);
         }
     }
 
@@ -45,6 +43,17 @@ public class CourseManagement extends containerofobjectsapi.ContainerOfObjects {
 
     public void printAll() {
         super.printall();
+    }
+
+    public boolean equals(Subject subject, TeacherSubject t) {
+
+        if (subject.getId() == t.getSubject().getId()) {
+            if (subject.getName() == t.getSubject().getName()) {
+                return true;
+            }
+        } else {
+        }
+        return false;
     }
 
 }

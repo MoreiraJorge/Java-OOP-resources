@@ -1,5 +1,7 @@
 package Courses;
 
+import java.util.Objects;
+
 public class TeacherSubject {
 
     private double hours;
@@ -24,4 +26,13 @@ public class TeacherSubject {
     public double getHours() {
         return hours;
     }
+
+    public Subject getSubject() {
+        return subject;
+    }
+
+    
+    
+    
+    
 }

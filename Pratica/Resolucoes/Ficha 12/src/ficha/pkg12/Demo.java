@@ -10,12 +10,13 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
+ * test class
  * @author morei
  */
 public class Demo {
 
     /**
+     * this is the test method
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -34,9 +35,6 @@ public class Demo {
         }
         
         System.out.println("");
-        
-        
-        
         System.out.println("");
         
         

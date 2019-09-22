@@ -13,8 +13,20 @@ import java.util.List;
  */
 public interface Operations {
     
+     /**
+     * thid method returns the average minutes per user using the phone
+     * and returns its value
+     * @return
+     */
     public List<Double> calculateAverageMinutesPerNumber();
     
+    /**
+     * thid method returns and writes to an csv file the average minutes spent
+     * on the phone , per user area
+     * @param area_code
+     * @param outputFileName
+     * @return
+     */
     public double calculateAverageMinutesPerArea(String area_code, String outputFileName);
     
 }

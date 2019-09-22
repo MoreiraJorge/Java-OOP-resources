@@ -24,13 +24,23 @@ import java.util.logging.Logger;
  * @author morei
  */
 public class Manage implements Operations {
-    //private int ObjCount = 0;
-    //private UserComData history[] = new UserComData[3333];
+    
+    
     private ArrayList<UserComData>specific = new ArrayList<UserComData>();
     
+    /**
+     * Default Management Constructor
+     */
     public Manage() {
     }
 
+    /**
+     * This method loads every user number objet into an arrayList, converting ever
+     * object component to its right type
+     * @param inputFileName
+     * @throws FileNotFoundException
+     * @throws IOException
+     */
     public void LoadInfoToArray(String inputFileName) throws FileNotFoundException, IOException {
         
         try (FileReader fr = new FileReader(inputFileName)) {
@@ -71,6 +81,11 @@ public class Manage implements Operations {
         }
     }
 
+    /**
+     * thid method returns the average minutes per user using the phone
+     * and returns its value
+     * @return
+     */
     @Override
     public List<Double> calculateAverageMinutesPerNumber() {
         
@@ -84,7 +99,13 @@ public class Manage implements Operations {
             return avgList;
     }
     
-
+    /**
+     * thid method returns and writes to an csv file the average minutes spent
+     * on the phone , per user area
+     * @param area_code
+     * @param outputFileName
+     * @return
+     */
     @Override
     public double calculateAverageMinutesPerArea(String area_code, String outputFileName) {
         

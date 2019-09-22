@@ -6,7 +6,7 @@
 package CallsStructure;
 
 /**
- *
+ * this class is the structure of an user phone Data
  * @author morei
  */
 public class UserComData {
@@ -19,9 +19,22 @@ public class UserComData {
     private String code;
     private String phnumber;
 
+    /**
+     * Default constructor
+     */
     public UserComData() {
     }
 
+    /**
+     * this constructor is used to build an object given specified parameters
+     * @param vmail
+     * @param dmin
+     * @param emin
+     * @param nmin
+     * @param intmin
+     * @param code
+     * @param phnumber
+     */
     public UserComData(int vmail, double dmin, double emin, double nmin, double intmin, String code, String phnumber) {
         this.vmail = vmail;
         this.dmin = dmin;
@@ -32,58 +45,114 @@ public class UserComData {
         this.phnumber = phnumber;
     }
 
+    /**
+     * 
+     * @return
+     */
     public int getVmail() {
         return vmail;
     }
 
+    /**
+     *
+     * @param vmail
+     */
     public void setVmail(int vmail) {
         this.vmail = vmail;
     }
 
+    /**
+     *
+     * @return
+     */
     public double getDmin() {
         return dmin;
     }
 
+    /**
+     *
+     * @param dmin
+     */
     public void setDmin(double dmin) {
         this.dmin = dmin;
     }
 
+    /**
+     *
+     * @return
+     */
     public double getEmin() {
         return emin;
     }
 
+    /**
+     *
+     * @param emin
+     */
     public void setEmin(double emin) {
         this.emin = emin;
     }
 
+    /**
+     *
+     * @return
+     */
     public double getNmin() {
         return nmin;
     }
 
+    /**
+     *
+     * @param nmin
+     */
     public void setNmin(double nmin) {
         this.nmin = nmin;
     }
 
+    /**
+     *
+     * @return
+     */
     public double getIntmin() {
         return intmin;
     }
 
+    /**
+     *
+     * @param intmin
+     */
     public void setIntmin(double intmin) {
         this.intmin = intmin;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getCode() {
         return code;
     }
 
+    /**
+     *
+     * @param code
+     */
     public void setCode(String code) {
         this.code = code;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getPhnumber() {
         return phnumber;
     }
 
+    /**
+     *
+     * @param phnumber
+     */
     public void setPhnumber(String phnumber) {
         this.phnumber = phnumber;
     }

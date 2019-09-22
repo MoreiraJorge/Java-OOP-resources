@@ -7,10 +7,17 @@ package CallsStructure;
 
 import Interfaces.Operations;
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -65,13 +72,66 @@ public class Manage implements Operations {
     }
 
     @Override
-    public void calculateAverageMinutesPerNumber() {
+    public List<Double> calculateAverageMinutesPerNumber() {
+        
+        List<Double> avgList = new ArrayList<>();
 
+        for (int i = 0; i < specific.size(); i++){
+            UserComData tmpNumb = specific.get(i);
+            double ave = (tmpNumb.getDmin() + tmpNumb.getEmin() + tmpNumb.getIntmin() + tmpNumb.getNmin()) / 4;
+            avgList.add(ave);
+        }
+            return avgList;
     }
+    
 
     @Override
-    public void calculateAverageMinutesPerArea(String area_code, String outputFileName) {
-
+    public double calculateAverageMinutesPerArea(String area_code, String outputFileName) {
+        
+        double avg = 0;
+        int count = 0;
+        
+        for (int i = 0; i < specific.size(); i++){
+            UserComData tmpNumb = specific.get(i);
+            
+            if (tmpNumb.getCode().equals(area_code)){
+                
+                avg = avg + tmpNumb.getDmin() + tmpNumb.getEmin() + tmpNumb.getIntmin()
+                        + tmpNumb.getNmin();
+                
+                
+                count += 1;
+            }
+        }
+        
+        avg = avg / count;
+        
+        try {
+            
+            try (BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(outputFileName), "UTF-8"))) {
+                StringBuilder sb = new StringBuilder();
+                
+                sb.append(area_code);
+                sb.append(";");
+                sb.append(avg);
+                
+                bw.write(sb.toString());
+                bw.newLine();
+                bw.flush();
+            }
+            
+            
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(Manage.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (UnsupportedEncodingException ex) {
+            Logger.getLogger(Manage.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(Manage.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        
+        
+        return avg;
     }
 
 }

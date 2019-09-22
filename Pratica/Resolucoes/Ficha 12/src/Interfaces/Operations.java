@@ -5,14 +5,16 @@
  */
 package Interfaces;
 
+import java.util.List;
+
 /**
  *
  * @author morei
  */
 public interface Operations {
     
-    public void calculateAverageMinutesPerNumber();
+    public List<Double> calculateAverageMinutesPerNumber();
     
-    public void calculateAverageMinutesPerArea(String area_code, String outputFileName);
+    public double calculateAverageMinutesPerArea(String area_code, String outputFileName);
     
 }

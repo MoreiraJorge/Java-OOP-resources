@@ -27,12 +27,16 @@ public class Demo {
         
         try {
             mn.LoadInfoToArray(path);
-            
+            System.out.println(mn.calculateAverageMinutesPerNumber());
+            System.out.println(mn.calculateAverageMinutesPerArea("415", "codes.csv"));
         } catch (IOException ex) {
             Logger.getLogger(Demo.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         System.out.println("");
+        
+        
+        
         System.out.println("");
         
         
